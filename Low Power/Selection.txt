@@ -1,0 +1,58 @@
+OpAmp
+Part#		Current 	Freq.		alpha
+TLV8811	  	425  [nA]	6    KHz	2,59		SOT23-5
+LPV811	  	425  [nA] 	8    KHz	3,37
+MCP6441	  	450  [nA] 	9    KHz	3,55		SOT23-5
+TSU111	  	900  [nA] 	11,5 KHz	2,23
+MAX40007  	700  [nA] 	20   KHz	4,77		SOT23-6 compatible
+MCP6141	  	600  [nA] 	100  KHz	24,60		SOT23-5
+OPX81	  	5000 [nA] 	105  KHz	3,09
+TSV6191	  	10000[nA] 	450  KHz	5,92
+MP8103	  	14000[nA] 	600  KHz	5,51
+LTC6258	  	20000[nA] 	1300 KHz	7,88
+
+MAX40007AUT+T 
+Mouser No:	700-MAX40007AUT+T
+Mfr. No:	MAX40007AUT+T 
+MCP6141T-E/OT 
+Mouser No:	579-MCP6141T-E/OT
+Mfr. No:	MCP6141T-E/OT 
+LPV811DBVR 
+Mouser No:	595-LPV811DBVR
+Mfr. No:	LPV811DBVR 
+TLV8811DBVR 
+Mouser No:	595-TLV8811DBVR
+Mfr. No:	TLV8811DBVR
+MCP6441T-E/OT
+Code commande RS 	726-3970 
+Mfr. No:		MCP6441T-E/OT  
+DAC LTC1662
+Mouser No:	584-LTC1662CMS8#PBF
+Mfr. No:	LTC1662CMS8#PBF 
+ADC ADS7044
+Code commande RS 	908-3809 
+Mfr. No:		ADS7044IDCUT 
+
+
+Comparator
+Part#		Prop. Delay	Current 	Internal ref	alpha
+LTC1540		60 [µS]		300  [nA]	Yes		2,44
+NCS3402		55 [µS]		470  [nA]	No		1,66
+TLV3691		24 [µS]		150  [nA]	No		10,01
+TPS383X		20 [µS]		150  [nA]	Supervisor	11,55
+MAX9060/8	15 [µS]		500  [nA]	No		4,34
+TLV370X		9  [µS]		560  [nA]	No		5,78
+MCP6541		4  [µS]		600  [nA]	No		10,18
+TS881		2  [µS]		210  [nA]	No		50,09
+TS880		2  [µS]		250  [nA]	No		42,08
+
+ADC
+Part#		Bits	Rate [Ksps]		Cons. [µW]	alpha
+ADS7044		10	1		SPI	1		285,08
+ADS7043		10	100		SPI	60		10,86
+
+DAC
+Part#		Bits		Cons. [µW]	Rate [Ksps]
+LTC1662		10		1.5μA
+MAX553X		12		6μA
+AD5425		8		2.2		2470

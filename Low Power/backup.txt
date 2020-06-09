@@ -1,0 +1,551 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{lipsum}% for dummy text
+\usepackage[]{multirow}
+
+\title{Mix Analog Digital Low Power triggers}
+\author{Valentin Gies, Sebastian Marzetti}
+\date{April 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Our goal is to trigger low power system when a specific signal is present.\\
+
+We don't work on radio-frequency wake-up, 
+
+\section{Artificial Intelligence stages}
+Embedded artificial intelligence can be divided in 3 stages on a consumption basis.
+\begin{enumerate}
+    \item Ultra Low Power, with maximum consumption: 100 $\mu$W.
+    Applications:
+        \subitem Analog Wake Up. 
+    \item Low Power, with maximum consumption: 10 mW.
+    Applications:
+        \subitem Low Power Microprocessor.
+            \subsubitem CC2652R
+    \item Normal Power. Applications:
+        \subitem High-Performance Embedded systems 
+            \subsubitem NVIDIA Jetson.
+        
+\end{enumerate}
+\section{Low-power wake-up use cases}
+Give an example by use case.
+\begin{itemize}
+    \item Detection of a peak event in one signal
+    \item Abnormal signal energy detection
+    \item Frequency detector
+    \item Binary pattern detector : detect the time pattern of successive peak or feature detections in a binary way
+    \item Analog pattern detector : detect the analog pattern of features, triggered by an event (peak detection for example) in a analog way
+    \item Correlation between 2 signals
+\end{itemize}
+Bien préciser que ces pattern sont pertinents si ils sont à durée limitée, d'où ajout de la temporalité sur les features extracted, d'où les state machines
+
+
+
+\section{Primitives for low power wake-up systems}
+\begin{itemize}
+    \item Temporal peak detector
+    \begin{itemize}
+        \item Comparator
+        \item Hysteresis comparator
+    \end{itemize}
+    \item Average energy 
+    \begin{itemize}
+        \item Absolute value 
+        \item Square value
+        \item Low Pass Filter
+    \end{itemize}
+    \item Frequency detector
+    \begin{itemize}
+        \item FFT
+        \item Filtering
+    \end{itemize}
+    \item Pattern detector
+    \item Value or Voltage reference
+    \begin{itemize}
+        \item Op Amp amplifier
+        \item DAC
+    \end{itemize}
+    \item Dot Product
+\end{itemize}
+
+Fig. 3 show the use cases on the first line, followed by the primitives on the second line (connected with arrows), and atomic functions in the third line. Each atomic function is surrounded by the color of its corresponding primitive.
+
+\section{Atomic functions for low power wake-up systems}
+
+\subsection{Discrete analog power consumption}
+Analysis VS frequency.
+
+\subsection{uC peripheral power consumption}
+Analysis VS frequency.
+
+\subsection{Performance study of atomic functions}
+Idée : placer l'ensemble de ces primitives dans un tableau de comparaison des consommations par itération du calcul, pour différentes fréquences de signal d'entrée : 20Hz, 1kHz et 50kHz ou 10Hz, 100Hz, 1kHz, 10kHz et 100kHz.
+\begin{itemize}
+    \item ADC
+    \item Comparator
+    \item DAC
+    \item LP - HP Filter
+    \item BP filter
+    \item Goertzel Filter
+    \item Absolute value
+    \item Square value
+    \item MAC
+    \item Multiplier
+    \item Logical gates
+    \item Monostable 
+    \item Flip-flop
+    \item Analog switch
+    \item Analog multiplexer 
+    \item FFT
+    \item Wavelets
+    \item Neural Network
+    \item Simultaneous Multiple MAC (parallel dot product)
+\end{itemize}
+Il faut comparer le cout d'une implantation uC et analog ou mix UC analog. Attention à séparer le cout de la conversion analogique-numérique du cout de calcul à proprement parler.\\
+
+%\lipsum[1]
+%\textbf{Here is inserted \texttt+sidewaystable+}.
+%\begin{sidewaystable}
+\begin{table}
+    \centering
+\caption{Atomic Functions Comparison}
+    \label{tab:AtomicFunctionsComparison}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{Atomic function}} & \multicolumn{10}{c|}{Consumption(Frequency) {[}nA{]}}                               \\ \cline{2-11} 
+\multicolumn{1}{|c|}{}                                 & 10 Hz & 20 Hz & 50 Hz & 100 Hz & 500 Hz & 1 KHz & 5 KHz & 10 KHz & 50 KHz & 100 KHz \\ \hline
+Comparator                                             & 150   & 150   & 150   & 150    & 150    & 150   & 150   & 150    & 150    & 900     \\ \hline
+Operational Amplifier                                  & 425   & 425   & 425   & 425    & 425    & 425   & 425   & 900    & 5000   & 5000    \\ \hline
+ADC                                                    & 300   & 300   & 300   & 300    & 300    & 300   & 23000 & 23000  & 23000  & 23000   \\ \hline
+DAC                                                    & 2200     & 2200     & 2200     & 2200      & 2200      & 2200     & 2200     & 2200      & 2200      & 2200       \\ \hline
+Monostable                                             & 35-5000 & 35-5000 & 35-5000 & 35-5000 & 35-5000 & 35-5000 & 35-5000 & 35-5000 & 35-5000 & 35-5000 \\ \hline
+Flip Flop                                              & 100-900     & 100-900     & 100-900     & 100-900      & 100-900      & 100-900     & 100-900     & 100-900      & 100-900      & 100-900       \\ \hline
+Analog switch                                          & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+Analog multiplexer                                     & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+Logical Gates                                          & 1000     & 1000     & 1000     & 1000      & 1000      & 1000     & 1000     & 1000      & 1000      & 1000       \\ \hline
+Absolute value                                         & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+Square value                                           & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+Multiplier                                             & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+LP - HP Filter                                         & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+BP Filter                                              & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+Goertzel Filter                                        & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+MAC                                                    & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+FFT                                                    & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+Wavelets                                               & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+Neural Network                                         & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+Simultaneous Multiple MAC                              & ?     & ?     & ?     & ?      & ?      & ?     & ?     & ?      & ?      & ?       \\ \hline
+\end{tabular}
+\end{table}
+%\end{sidewaystable}
+%\lipsum[2-9]
+
+Discrete analog components:\\ 
+\begin{itemize}
+    \item Operational Amplifier: is an essential building block for analog circuits, it could be replaced for less efficient passive components, however at some point it will be necessary to use an operational amplifier. IC comparison is shown in Tables \ref{tab:OpAmpComparisonI} and \ref{tab:OpAmpComparisonII} as well as in Fig. \ref{fig:OpAmpFigureComparison} featuring power consumption versus Gain Bandwidth product. Each operational amplifier has a low power index $\alpha$, which is equal to the power regression consumption corresponding to its gain badwidth product divided by its consumption. Higher the index, higher the low power performance.
+    
+    The lowest power consumption is filed by the LPV811 IC from Texas Instrument with 425 nA Supply current per channel and a Gain-Bandwidth of 8 KHz. Then the operational amplifier with the best index low power is the MCP614X, non-stable for unity gain at least 10.  
+    %TODO : etablir une régression linéaire de la conso en fonction du produit Gain-Bande
+    
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=100mm]{Pictures/OpAmp3.png}	
+		\caption{Operational Amplifiers comparison Current consumption [nA] vs. Gain Bandwidth Product [KHz].}
+		\label{fig:OpAmpFigureComparison}
+	\end{figure}
+
+    \begin{table}%[h!]
+        \centering
+        \caption{Operational Amplifier Comparison I of II.}
+        %    	TODO : supprimer le ref identiques avec 1, 2, 3 ou 4 amplis dans un package, ajouter un indice de low power : $\alpha = \frac{Conso}{Valeur de la valeur de la régression linéaire sur la conso correspondant au GBP de l'Op Amp}$}
+    	\label{tab:OpAmpComparisonI}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Part\#    & GBP typ. {[}KHz{]} & Iq/Amplifier {[}nA{]} & $\alpha$     \\ \hline
+LT600X    & 2                  & 850                   & 0,47  \\ \hline
+LT149X    & 2,7                & 1000                  & 0,53  \\ \hline
+TLV8811   & 6                  & 425                   & 2,59  \\ \hline
+LPV521    & 6,2                & 500                   & 2,27  \\ \hline
+AD850X    & 7                  & 750                   & 1,69  \\ \hline
+TSU101    & 8                  & 580                   & 2,47  \\ \hline
+TLV854x   & 8                  & 500                   & 2,87  \\ \hline
+LPV811    & 8                  & 425                   & 3,37  \\ \hline
+LPV542    & 8                  & 490                   & 2,93  \\ \hline
+MCP6441   & 9                  & 450                   & 3,55  \\ \hline
+MAX44264  & 9                  & 750                   & 2,13  \\ \hline
+TS94x     & 10                 & 1200                  & 1,47  \\ \hline
+TSU111    & 11,5               & 900                   & 2,23  \\ \hline
+LT167X    & 12                 & 1500                  & 1,39  \\ \hline
+LTC154X   & 12                 & 5000                  & 0,42  \\ \hline
+MAX40007  & 20                 & 700                   & 4,77  \\ \hline
+LTC206X   & 20                 & 1400                  & 2,39  \\ \hline
+OPX90     & 20                 & 20000                 & 0,17  \\ \hline
+OPX93     & 35                 & 30000                 & 0,19  \\ \hline
+LT6023    & 40                 & 18000                 & 0,35  \\ \hline
+ADA4505   & 50                 & 9000                  & 0,87  \\ \hline
+LT600X    & 50                 & 13000                 & 0,60  \\ \hline
+LT217X    & 60                 & 13000                 & 0,71  \\ \hline
+LT117X    & 85                 & 12000                 & 1,06  \\ \hline
+OPX95     & 85                 & 175000                & 0,07  \\ \hline
+AD8505    & 95                 & 16500                 & 0,85  \\ \hline
+AD8506    & 95                 & 20000                 & 0,70  \\ \hline
+MCP614X &   100 &   600 &   24,60   \\ \hline
+LP358     & 100                & 54000                 & 0,27  \\ \hline
+LP2904    & 100                & 54000                 & 0,27  \\ \hline
+LTC206X   & 100                & 7500                  & 1,97  \\ \hline
+OPX81     & 105                & 5000                  & 3,09  \\ \hline
+TSV611    & 120                & 10000                 & 1,75  \\ \hline
+LT146XL   & 120                & 60000                 & 0,29  \\ \hline
+ADA4051   & 125                & 13000                 & 1,40  \\ \hline
+TSV711    & 150                & 14000                 & 1,53  \\ \hline
+LT146X    & 175                & 28000                 & 0,88  \\ \hline
+LT1635    & 175                & 130000                & 0,19  \\ \hline
+LT149XA   & 180                & 40000                 & 0,63  \\ \hline
+\end{tabular}
+	\end{table}
+	
+    \begin{table}%[h!]
+        \centering
+	    \caption{Operational Amplifier Comparison II of II.}
+	    %TODO : supprimer le ref identiques avec 1, 2, 3 ou 4 amplis dans un package, ajouter un indice de low power : $\alpha = \frac{Conso}{Valeur de la valeur de la régression linéaire sur la conso correspondant au GBP de l'Op Amp}$}
+    	\label{tab:OpAmpComparisonII}
+	    \begin{tabular}{ | l | l | l | l |}
+        \hline
+    	Part\# & GBP typ. [KHz] & Iq/Amplifier [nA] & $\alpha$ \\ \hline
+        LT207X    & 200                & 35000                 & 0,80  \\ \hline
+LT107X    & 200                & 38000                 & 0,74  \\ \hline
+LT1782    & 200                & 40000                 & 0,70  \\ \hline
+LT1636    & 200                & 42000                 & 0,67  \\ \hline
+LTC1047   & 200                & 60000                 & 0,47  \\ \hline
+RH1078M   & 200                & 75000                 & 0,37  \\ \hline
+AD865X    & 230                & 22000                 & 1,45  \\ \hline
+LT1077    & 230                & 48000                 & 0,66  \\ \hline
+AD8609    & 316                & 40000                 & 1,07  \\ \hline
+AD860X    & 316                & 50000                 & 0,85  \\ \hline
+LT601X    & 330                & 135000                & 0,33  \\ \hline
+AD8613    & 350                & 38000                 & 1,23  \\ \hline
+AD861X    & 400                & 38000                 & 1,40  \\ \hline
+LT6020    & 400                & 90000                 & 0,59  \\ \hline
+AD8538    & 430                & 180000                & 0,32  \\ \hline
+TSV6191   & 450                & 10000                 & 5,92  \\ \hline
+OPX96     & 450                & 60000                 & 0,99  \\ \hline
+LTC2055   & 500                & 130000                & 0,50  \\ \hline
+LTC2054   & 500                & 140000                & 0,47  \\ \hline
+LTC2055HV & 500                & 150000                & 0,43  \\ \hline
+LTC2054HV & 500                & 175000                & 0,37  \\ \hline
+MP8103    & 600                & 14000                 & 5,51  \\ \hline
+LTC607X   & 750                & 54000                 & 1,76  \\ \hline
+ADA4096   & 786                & 60000                 & 1,65  \\ \hline
+AD854X    & 1000               & 65000                 & 1,90  \\ \hline
+LT146X    & 1000               & 145000                & 0,85  \\ \hline
+AD648     & 1000               & 170000                & 0,73  \\ \hline
+LT1637    & 1000               & 190000                & 0,65  \\ \hline
+LT1639    & 1075               & 170000                & 0,78  \\ \hline
+LT1638    & 1200               & 170000                & 0,86  \\ \hline
+ADA4091   & 1270               & 165000                & 0,93  \\ \hline
+LTC626X   & 1300               & 20000                 & 7,88  \\ \hline
+ADA4092   & 1400               & 165000                & 1,02  \\ \hline
+LTC608X   & 1500               & 110000                & 1,63  \\ \hline
+LT601X    & 1600               & 145000                & 1,32  \\ \hline
+ADA4691   & 3600               & 165000                & 2,45  \\ \hline
+LTC625X   & 6500               & 60000                 & 11,60 \\ \hline
+        \end{tabular}
+    \end{table}
+
+    \item Comparator: Analog comparators are far less power-consuming than the ADC. The lowest IC is the TLV3691 with a maximum current consumption of 150 nA from Texas Instrumenst. Which propagation delay (the amount of time it takes for a signal propagation from the input to the output) of 24 $\mu$S. Comparator IC comparison is shown in Table \ref{tab:ComparatorComparison}.
+    
+    \begin{figure}[h!]
+	    \centering
+	    \includegraphics[width=100mm]{Pictures/Comparator2.PNG}		
+	    \caption{IC Comparator comparison $Current consumption$ [nA] vs. $Propagation$ $delay^{(-1)}$ [KHz]}
+	    \label{fig:ComparatorFigureComparison}
+	\end{figure}
+	    
+	\begin{table}
+        \centering
+    	\caption{Comparator Comparison.}
+    	\label{tab:ComparatorComparison}
+        \begin{tabular}{|l|l|l|l|l|}
+        \hline
+        Part \#   & Propagation & Current {[}nA{]} & Internal & $\beta$       \\ 
+        \   & Delay {[}$\mu$S{]} & @3V & Reference & \       \\ \hline
+        LTC1540   & 60                         & 300                  & Yes                & 2,44 \\ \hline
+        NCS3402   & 55                         & 470                  & No                 & 1,66 \\ \hline
+        LTC1540   & 50                         & 500                  & Yes                & 1,69 \\ \hline
+        TLV3691   & 24                         & 150                  & No                 & 10,01 \\ \hline
+        ADCMP380  & 23                         & 348,3333333          & Yes                & 4,46 \\ \hline
+        LT1017    & 22                         & 50000                & No                 & 0,03 \\ \hline
+        TPS383X   & 20                         & 150                  & Supervisor         & 11,55 \\ \hline
+        LT6700-1  & 18                         & 2660                 & Yes                & 0,71 \\ \hline
+        LT6703-2  & 18                         & 3033,333333          & Yes                & 0,62 \\ \hline
+        MAX9060/8 & 15                         & 500                  & No                 & 4,34 \\ \hline
+        MAX931/4  & 12                         & 4000                 & Yes                & 0,64 \\ \hline
+        ADCMP341  & 10                         & 12833,33333          & Yes                & 0,23  \\ \hline
+        ADCMP343  & 10                         & 3683,333333          & Yes                & 0,80 \\ \hline
+        ADCMP670  & 10                         & 3230                 & Yes                & 0,92 \\ \hline
+        MIC8412   & 10                         & 1500                 & Monitor & 1,98 \\
+        \   & \                         & \                 & Hysteresis & \ \\\hline
+        ADCMP39X  & 9,5                        & 25966,66667          & Yes                & 0,11 \\ \hline
+        TLV370X  & 9                        & 560          & No                & 5,78 \\ \hline
+        LTC1440   & 8                          & 3500                 & Yes                & 1,01 \\ \hline
+        LTC1541   & 8                          & 8333,333333          & Yes                & 0,42  \\ \hline
+        LT1018    & 6                          & 183333,3333          & No                 & 0,02 \\ \hline
+        MAX9025/8 & 6                          & 1000                 & Yes                & 4,44 \\ \hline
+        MAX951/4  & 6                          & 7000                 & Yes \& OpAmp       & 0,63 \\ \hline
+        ADCMP35X  & 5                          & 27666,66667          & Yes                & 0,18 \\ \hline
+        ADCMP361  & 5                          & 3683,333333          & Yes                & 1,39 \\ \hline
+        ADCMP37X  & 5                          & 13000                & No                 & 0,39 \\ \hline
+        MIC833    & 5                          & 1000                 & Monitor & 5,13 \\
+        \   & \                         & \                 & Hysteresis & \ \\\hline
+        ADCMP396  & 4,94                       & 31900                & Yes                & 0,16 \\ \hline
+        ADCMP391  & 4,5                        & 14260                & No                 & 0,39 \\ \hline
+        ADCMP392  & 4,5                        & 16933,33333          & No                 & 0,33 \\ \hline
+        ADCMP393  & 4,5                        & 20546,66667          & No                 & 0,27 \\ \hline
+        LTC1443   & 4                          & 9166,666667          & Yes                & 0,66 \\ \hline
+        LTC1841   & 4                          & 5833,333333          & No                 & 1,05 \\ \hline
+        MCP6541   & 4                          & 600                  & No                 & 10,18 \\ \hline
+        LT1716    & 3                          & 58333,33333          & No                 & 0,13 \\ \hline
+        TS881     & 2                          & 210                  & No                 & 50,09  \\ \hline
+        TS880     & 2                          & 250                  & No                 & 42,08 \\ \hline
+        \end{tabular}
+    \end{table}
+	    
+
+%    \begin{itemize}
+%        \item TLV3691: 0.9-V to 6.5-V, Nanopower Comparator
+%        \begin{itemize}
+%            \item Low Quiescent Current: 75 nA
+%        \end{itemize}
+%        \item MAX931–MAX934: single, dual, and quad micropower, low-voltage comparators. Single +2.5V to +11V, Dual $\pm$1.25V to $\pm$5.5V.
+%        \begin{itemize}
+%            \item Ultra-Low 4$\mu$A Max Quiescent Current over Extended Temperature range.
+%        \end{itemize}
+%            	\item MIC833: The MIC833 is a micropower precision dual voltage comparator with an on-chip reference and latch. High and low voltage thresholds are adjusted independently, allowing for wide hysteresis. Three external resistors determine the threshold voltages. Voltage detection thresholds are accurate to 1.5\%. Supply current is extremely low (1$\mu$A, typical), making it ideal for portable applications.
+%    	\item MCP6541: The MCP6541 is a Push-pull, single comparator. This single-ended device operates from 1.6V to 5.5V, with typical quiescent current of 600 nA and a maximum of 1 $\mu$A.  
+    	%\item MIC841: The MIC841 and MIC842 are micropower, precision voltage comparators with an on-chip voltage reference. Both devices are intended for voltage monitoring applications. External resistors are used to set the voltage monitor threshold. When the threshold is crossed, the outputs switch polarity. IQ typical 1.5 $\mu$A.
+        
+        %\item TS881: single comparator featuring ultra low supply current (210 nA typical with output high, VCC= 1.2 V, no load).
+        %\item TS882: The TS882 is a dual and the TS884 device a quad comparator featuring ultra-low supply current (220 nA typical per operator with output high, VCC = 1.2 V, no load).
+%        \item NCS3402: The NCS3402 is a nanopower comparator consuming only 470 nAper channel supply current, which make this device ideal for batterypower and wireless handset applications.
+%        \item LTC1540: The LTC1540  is  an  ultralow  power,  single  comparator  with  built-in  reference.  The  comparator’s  features include less than 0.6$\mu$A supply current over the commercial temperature  range.
+ %       \item MAX951–MAX954: The  MAX951–MAX954  feature  combinations  of  a  micro-power  operational  amplifier,  comparator,  and  reference  in  an  8-pin  package. The  MAX951/MAX952  operate  from  a  single  2.7V  to  7V  supply  with  a  typical supply current of 7$\mu$A, while the MAX953/MAX954 operate from 2.4V to 7V with a 5$\mu$A typical supply current.
+ %   \end{itemize}
+    \item ADC: Analog to digital converters can present an under 1 $\mu$W consumption working at 1 KSample per second, allowing ultra low power applications but for low frequencies. The next step is 60 $\mu$W consumption working at 100 KSample per second. These features are filed by the IC ADS7041/2 from Texas Instruments. ADC IC comparison is shown in Table \ref{tab:ADCComparison}. \\
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=100mm]{Pictures/ADCComparison.PNG}		
+		\caption{ADC comparison Current Consumption [$\mu$W] vs. Sample Rate [Ksps].}
+		\label{fig:ADCFigureComparison}
+	\end{figure}
+    
+    \begin{table}%[h!]
+        \centering
+    	\caption{ADC Comparison.}
+    	\label{tab:ADCComparison}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+Part \#    & Res. & Sample & Data & Cons. & $\gamma$           \\
+\    &  {[}bits{]} & Rate {[}Ksps{]} & Output & {[}$\mu$W{]} &        \    \\\hline
+LTC248X/9X & 16                    & 0,0068                 & Serial I2C  & 480                  & 0,24 \\ \hline
+LTC2493/99 & 24                    & 0,015                  & Serial I2C  & 480                  & 0,28 \\ \hline
+LTC2494    & 16                    & 0,015                  & Serial SPI  & 480                  & 0,28 \\ \hline
+LTC2485    & 24                    & 0,015                  & Serial I2C  & 480                  & 0,28 \\ \hline
+AD7788     & 16                    & 0,0166                 & Serial SPI  & 226                  & 0,60 \\ \hline
+AD7789     & 24                    & 0,0166                 & Serial SPI  & 226                  & 0,60 \\ \hline
+MAX1120X   & 24                    & 0,1                    & Serial      & 300                  & 0,63 \\ \hline
+AD7788/9   & 24                    & 0,1                    & SPI         & 225                  & 0,84 \\ \hline
+MCP355X    & 22                    & 0,1                    & SPI         & 120                  & 1,57 \\ \hline
+AD7787/90  & 24                    & 0,12                   & Serial SPI  & 800                  & 0,24 \\ \hline
+AD7170     & 12                    & 0,125                  & Serial SPI  & 330                  & 0,59 \\ \hline
+AD7171     & 16                    & 0,125                  & Serial SPI  & 330                  & 0,59 \\ \hline
+ADS7044    & 12                    & 1                      & SPI         & 1                    & 285,08      \\ \hline
+ADS7043    & 10                    & 1                      & SPI         & 1                    & 285,08      \\ \hline
+MAX11905   & 20                    & 1                      & SPI         & 6,7                  & 42,55 \\ \hline
+LTC1288    & 12                    & 6,6                    & Serial SPI  & 630                  & 0,63 \\ \hline
+LTC1285    & 12                    & 7,5                    & Serial SPI  & 480                  & 0,85 \\ \hline
+LTC1098L   & 8                     & 16,5                   & Serial SPI  & 470                  & 1,00 \\ \hline
+LTC1096L   & 8                     & 16,5                   & Serial SPI  & 360                  & 1,31 \\ \hline
+AD7124-4   & 24                    & 19,2                   & Serial SPI  & 842                  & 0,58 \\ \hline
+AD7124-8   & 24                    & 19,2                   & Serial SPI  & 840                  & 0,58 \\ \hline
+MCP302X    & 10                    & 22                     &             & 1250                 & 0,40 \\ \hline
+AD7091R-5  & 12                    & 22,22                  & Serial I2C  & 170                  & 2,93  \\ \hline
+LTC1098    & 8                     & 33                     & Serial SPI  & 780                  & 0,68 \\ \hline
+LTC1096    & 8                     & 33                     & Serial SPI  & 600                  & 0,89 \\ \hline
+AD798X     & 18                    & 100                    & Serial SPI  & 700                  & 0,93 \\ \hline
+ADS7057    & 14                    & 100                    & SPI         & 158                  & 4,12   \\ \hline
+ADS7044    & 12                    & 100                    & SPI         & 69                   & 9,44 \\ \hline
+ADS7043    & 10                    & 100                    & SPI         & 60                   & 10,86 \\ \hline
+MCP320X    & 12                    & 100                    &             & 2000                 & 0,33 \\ \hline
+MCP330X    & 13                    & 100                    &             & 2250                 & 0,29 \\ \hline
+MCP3202    & 12                    & 100                    &             & 2750                 & 0,24 \\ \hline
+AD7466     & 12                    & 200                    & Serial SPI  & 900                  & 0,82 \\ \hline
+AD7467     & 10                    & 200                    & Serial SPI  & 630                  & 1,17 \\ \hline
+MCP300X    & 10                    & 200                    &             & 2500                 & 0,30 \\ \hline
+AD7468     & 8                     & 320                    & Serial SPI  & 570                  & 1,41 \\ \hline
+MCP33141   & 12                    & 500                    &             & 4500                 & 0,19 \\ \hline
+ADS7042    & 12                    & 1000                   & SPI         & 234                  & 4,21 \\ \hline
+ADS7043    & 12                    & 1000                   & SPI         & 690                  & 1,43 \\ \hline
+ADS7041    & 10                    & 1000                   & SPI         & 189                  & 5,21 \\ \hline
+ADS7042    & 10                    & 1000                   & SPI         & 600                  & 1,64 \\ \hline
+AD7091R    & 12                    & 1000                   & SPI         & 349                  & 2,82 \\ \hline
+\end{tabular}
+    \end{table}
+%    \begin{itemize}
+%	\item ADS7056: 14-Bit 2.5MSPS Ultra-Low-Power Ultra-Small-Size SAR ADC With SPI Interface.\\
+%	SPI-Compatible Serial Interface: 60 MHz.\\
+%	Ultra-Low Power Consumption:
+%	\begin{itemize}
+%		\item 3.5 mW at 2.5-MSPS with 3.3-V AVDD
+%		\item 158 $\mu$W 100-kSPS with 3.3-V AVDD
+%	\end{itemize}
+%	\item ADS7042: Ultra-LowPower,Ultra-SmallSize, 12-Bit,1-MSPS,SAR ADC.\\    
+%	SPI-CompatibleSerialInterface: 16 MHz.\\
+%	Industry's First SAR ADC with Nanowatt Power Consumption:
+%	\begin{itemize}
+%		\item 234 $\mu$W at 1 MSPS with 1.8-V AVDD
+%		\item 690 $\mu$W at 1 MSPS with 3-V AVDD
+%		\item 69 $\mu$W at 100 kSPS with 3-V AVDD
+%		\item Less than 1 $\mu$W at 1 kSPS with 3-V AVDD
+%	\end{itemize}
+%	\item ADS7041: Ultra-Low Power and Ultra-Small Size SAR ADC, 10 Bit, 1MSPS, Single Ended.\\
+%	SPI-Compatible Serial Interface: 14 MHz.\\
+%	Industry’s First SAR ADC with Nanowatt Power Consumption:
+%	\begin{itemize}
+%		\item 189 $\mu$W at 1 MSPS with 1.8-V AVDD
+%		\item 600 $\mu$W at 1 MSPS with 3-V AVDD
+%		\item 60 $\mu$W at 100 kSPS with 3-V AVDD
+%		\item Less than 1 $\mu$W at 1 kSPS with 3-V AVDD
+%	\end{itemize}
+%	\item MAX11904: 20-Bit, 1 Msps, Low-Power, Fully Differential SAR ADC.\\
+%	SPI-QSPI-MICROWIRE DSP-Compatible.\\
+%	Power Consumption:
+%	\begin{itemize}
+%		\item 6.7 mW at 1 MSPS 
+%		\item Scale as 6.7 $\mu$W/ksps
+%	\end{itemize}
+%	\item MAX11201: 24-Bit, Single-Channel, Ultra-Low-Power, Delta Sigma ADC with 2-Wire Serial Interface.\\
+%	Serial 2-Wire Interface (Clock Input and Data Output).\\
+%	Experience the Industry's Highest ENOB ADC at < 1 mW:
+%	\begin{itemize}
+%		\item $<$ 320 $\mu$A max active current 
+%	\end{itemize}
+%	\item MAX11200: 24-Bit, Single-Channel, Ultra-Low Power, Delta-Sigma ADCs with GPIO.\\
+%	SPI-Compatible.\\
+%	Power Consumption:
+%	\begin{itemize}
+%		\item $<$ 300 $\mu$A max active current
+%		\item Sleep-Mode Current Drain $<$ 0.4 $\mu$A
+%	\end{itemize}
+%	\item MAX11202: 24-Bit, Single-Channel, Ultra-Low-Power, Delta-Sigma ADC with 2-Wire Serial Interface.\\
+%	2-wire serial interface compatible.\\
+%	Power Consumption:
+%	\begin{itemize}
+%		\item $<$ 300 $\mu$A max active current
+%		\item Sleep-Mode Current Drain $<$ 0.4 $\mu$A
+%	\end{itemize}
+%	\item  AD7091R: 12-Bit, 1 Msps, Low-Power, Fully Differential SAR ADC.\\
+%	SPI-QSPI-MICROWIRE DSP-Compatible.\\
+%	Power Consumption:
+%	\begin{itemize}
+%		\item 349 $\mu$A typical at 3V and 1MSPS 
+%		\item 264 nA typical at 3V in power-down mode
+%	\end{itemize}
+%	\item  AD7788/9: 24-Bit, Single-Channel, Ultra Low Power, Sigma-Delta A/D Converter.\\
+%	SPI-QSPI-MICROWIRE DSP-Compatible.\\
+%	Power Consumption:
+%	\begin{itemize}
+%		\item the power dissipation for the device is 225 $\mu$ W maximum 
+%	\end{itemize}
+%	
+%	\item  AD7091R: 12-Bit, 1 Msps, Low-Power, Fully Differential SAR ADC.\\
+%	SPI-QSPI-MICROWIRE DSP-Compatible.\\
+%	Power Consumption:
+%	\begin{itemize}
+%		\item 349 $\mu$A typical at 3V and 1MSPS 
+%		\item 264 nA typical at 3V in power-down mode
+%	\end{itemize}
+%	\item MCP355X: The MCP355X devices are 2.7V to 5.5V low-power, 22-bit delta-sigma A/D converters. The devices offer output noise as low as 2.5 $\mu$Vrms with a total unadjusted error of less than 10 ppm. Typical Operating Current 120 $\mu$A.
+%\end{itemize}
+    
+    \item DAC: Digital to analog converters IC can operate at up to 1.5 $\mu$A supply current, this is the LTC1662 from Linear TECHNOLOGY, which has 10 bits resolution. A graph to compare power consumption between the others atomic functions is more complicated considering frequency or data rate. The reason is for example the rising and falling voltages slew rate are not the same. DAC IC comparison is shown in Table \ref{tab:DACComparison}.
+    
+    \begin{table}%[h!]
+        \centering
+        \caption{DAC Comparison.}
+        \label{tab:DACComparison}
+        \begin{tabular}{|l|l|l|l|}
+        \hline
+        %Comparation DAC &                 &                      &                  \\ \hline
+        Part \#         & Resolution Bits & Consumption {[}$\mu$W{]} & Update Rate Ksps \\ \hline
+        DAC161S997      & 16              & 100 $\mu$A               &                  \\ \hline
+        DACx311         & 12              & 80 $\mu$A @ 2V           &                  \\ \hline
+        DAC8830         & 16              & 15                   &                  \\ \hline
+        DAC8832         & 16              & 15                   &                  \\ \hline
+        LTC1662         & 10              & 1.5 $\mu$A               &                  \\ \hline
+        MAX553X         & 12              & 6 $\mu$A                 &                  \\ \hline
+        MAX5532         & 12              & 5 $\mu$A                 &                  \\ \hline
+        MCP47A1         & 6               & 130 $\mu$A               &                  \\ \hline
+        LTC2631         & 10/12/08        & 450                  & 9.6              \\ \hline
+        LTC2631A-12     & 12              & 450                  & 9.6              \\ \hline
+        AD5662          & 16              & 1250                 & 125              \\ \hline
+        AD5063          & 16              & 330                  & 333              \\ \hline
+        DAC8043         & 12              & 500                  & 366              \\ \hline
+        AD794X          & 12              & 25                   & 1700             \\ \hline
+        AD5602/12       & 08/10           & 500                  & 1700             \\ \hline
+        AD5601          & 8               & 550                  & 1700             \\ \hline
+        AD5611/21/41    & 10/12/14        & 550                  & 1700             \\ \hline
+        LTC2640         & 10              & 450                  & 2000             \\ \hline
+        AD5425          & 8               & 2.2                  & 2470             \\ \hline
+        AD5426          & 8               & 25                   & 2500             \\ \hline
+        AD5432          & 10              & 27.5                 & 2500             \\ \hline
+        AD5443          & 12              & 3                    & 2500             \\ \hline
+        DAC8143         & 12              & 500                  & 2630             \\ \hline
+        AD54XX          & 14              & 2.2                  & 2700             \\ \hline
+        AD5444          & 12              & 2.2                  & 2700             \\ \hline
+        AD5450/1/2      & 08/10/12        & 2.2                  & 2700             \\ \hline
+        LTC264X         & 16              & 360                  & 3000             \\ \hline
+        AD5441          & 12              & 5.5                  & 4000             \\ \hline
+        AD5424/33/45    & 08/10/12        & 2.2                  & 20400            \\ \hline
+        \end{tabular}
+    \end{table}
+    %	\begin{itemize}
+    %		\item DAC8830: 16-Bit Resolution, 2.7 V to 5.5 V Single-Supply Operation. Very Low Power: 15 $\mu$W for 3 V Power
+    %		\item DAC7311: 12-bit, single-channel, ultra-low power DAC in 6-pin SC70 package for battery powered applications. The low power consumption of these devices in normal operation (0.55mW at 5 V, reducing to 2.5 $\mu$W in power-down mode.
+    %		\item MAX5531: The MAX5530/MAX5531 are single, 12-bit, ultra-low- power, voltage-output, digital-to-analog converters (DACs) offering rail-to-rail buffered voltage outputs. The DACs operate from a 1.8V to 5.5V supply and consume less than 6$\mu$A, making them desirable for low-power and low-voltage applications. A shutdown mode reduces overall current, including the reference input current, to just 0.18$\mu$A.
+    %		\item MAX5532: Dual, Ultra-Low-Power, 12-Bit, Voltage-Output DACs. The DACs operate from a 1.8V to 5.5V supply and consume less than 5$\mu$A, making the devices suitable for low-power and low-voltage applications.
+    %		\item LTC1662: The LTC1662 is an ultralow power, fully buffered voltage output, dual 10-bit digital-to-analog converter (DAC). Each DAC  channel  draws  just  1.7$\mu$A  (typ)  total  supply-plus-reference operating current, yet is capable of supplying DC output currents in excess of 1mA and reliably driving capacitive loads of up to 1000pF. A programmable sleep mode further reduces total operating current to 0.05$\mu$A.
+    %		\item DAC161S997: 16 Bit Resolution, very low supply Current of 100 $\mu$A. The DAC161S997 is a very low power16-bit $\Sigma \Delta$ for transmitting an analog output current over an industry standard 4-20mA current loop.
+    %		\item MCP47A1: MCP47A1 is a volatile, 6-bit Digital-to-Analog converter (DAC) for general purpose applications. Settings are controlled through an I2C™Compatible serial interface. The I2C™Compatible slave addresses of “010 1110” and “011 1110” are supported. Typical Standby Current 90 $\mu$A. Typical Operating Current 130 $\mu$A.
+    %		\item MCP48CMB01: MCP48CMB01 is a single channel, 8-bit, buffered voltage output Digital-to-Analog Converter (DAC) with MTP memory and an SPI Interface. This  device provides four different voltage reference options: device VDD, external VREF (Buffered or unbuffered) and internal bandgap. Typical Operating Current 160 $\mu$A.
+    %	\end{itemize}
+    
+    \item Logic Gates
+    The logic gates consumption is approximately 0.9 $\mu$A for each one. This means that very few could be used on an ultra low power wake up. Needless to say, using discrete components. 
+    
+    \item Monostables
+    Monostables IC consumption is at least 60 $\mu$A. Except for the Texas instruments TPL5111 (System timer for power gating) with a current consumption of 35 nA at 2.5 V. It can be used to enable and disable the power supply for a micro-controller or other system device, drastically reducing the overall system stand-by current during the sleep time. An application for pattern detection is: when the pattern is constant over time, it can activate a wake up every 10 seconds, reducing the average consumption. The other one is the CSS555C from Custom Silicon Solutions, it features an operating current under 5 $\mu$A and a minimum supply voltage of 1.2 V, which leaves it among the most interesting low power monostables.
+    %TODO ajouter CSS555C  http://www.customsiliconsolutions.com/downloads/Revised\%20Standard\%20products\/CSS555C\_Spec.pdf
+    
+    \item Flip FLop 
+    The best Flip Flop D found (in terms of consumption) is the SN74HCS72 from Texas Instruments, this one presents a typical $I_{CC}$ of 100 nA. All inputs include Schmitt-triggers, allowing for slow or noisy input signals. The drawback is the necessity of a clock, however clever applications can be developed simulating the clock by another component. 
+\end{itemize}
+
+\subsection{IC Comparison}
+A comparison between operational amplifiers and comparator IC's is presented in Fig. \ref{fig:ICComparison}. 
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=100mm]{Pictures/ICComparison3.PNG}		
+		\caption{Operational Amplifiers and Comparator IC comparison, Current consumption [nA] vs. Frequency [KHz]}
+		\label{fig:ICComparison}
+	\end{figure}
+
+\section{Functions for ultra low power analog wake-up}
+This section presents functions with active components which can be used in ultra low power analogs wake-up. For each function theoretical consumption is presented.
+
+\end{document}

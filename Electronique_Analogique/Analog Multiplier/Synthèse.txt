@@ -1,0 +1,99 @@
+1) Simulation of four-quadrant four transistors synapse analog multiplier
+	Power 13.2 µW	3.3V
+	Number of transistors 4
+	Freq 10 MHz
+
+1b)(17)	Power 1.79 µW	0.6V
+	Number of transistors 37
+	Freq 57 KHz
+
+1C)(20)	Power 1.12 µW	1.0V
+	Number of transistors >26
+	Freq 768 KHz
+
+1D)(21)	Power 2.3 µW	1.0V
+	Number of transistors 16
+	Freq 2.8 MHz
+
+5) A 16 x 16 Nonvolatile Programmable Analog Vector-Matrix Multiplier
+	In this paper, we present a 16  16 analog vectormatrix multiplier 
+	with analog electrically erasable and programmable read-only memories 
+	(EEPROM’s) used as nonvolatile storage for the weight matrix values.
+	
+	Freq = 60 KHz,	16x16 multiplication at once, 15.36 million analog mult/Second
+	Power consumption 100 mW, power supply 5 V
+	Output noise (rms value) 540 µV
+
+6) CMOS design of a low power and high precision four-quadrant analog multiplier
+	In this paper, a novel current-mode Four-quadrant analog multiplier is 
+	proposed. The newly designedcurrent squarer circuits and one current mirror 
+	which all operate in low supply voltage (2 V) are the basicbuilding blocks 
+	in realization of the mathematical equations.
+
+	Bandwidth 485 MHz
+	Power consumption 232 µW
+	Linearity error of: 0.17%
+	Chip Area 594 µm2
+
+6a)(27)	BW	79.6 MHZ
+	Power 60 µW
+	Lineratity Error 0.75%
+	Chip Area 600 µm2
+
+6b)(17) BW	533 MHz
+	Power	214.5 µW
+	Lineratity Error 0.56%
+	Chip Area 234.9 µm2			 	
+
+7) A Low-Power CMOS Analog Multiplier
+	This paper presents a low power CMOS analog multiplier with 
+	performance analysis and design considerations. It is demonstrated in 
+	particular that this multiplier is much better than other structures 
+	in terms of power consumption, and is hence especially suitable for 
+	implementation of large-scale circuits.
+	
+	Bandwidth 1.02 GHz
+	Power consumption 45 µW, 30µA
+	Linearity error of: x 1.09%, y 4.52% 	
+
+8) A Neuromorphic Chip Optimized for Deep Learning and CMOS Technology With Time-Domain Analog and Digital Mixed-Signal Processing
+	
+9) A novel bulk-input low voltage and low power four quadrant analog multiplier in weak inversion
+	A new four quadrant voltage mode bulk input analog multiplier is presented.
+	The proposed multiplier is designed to operate in weak inversion.
+
+	Power 714.3 nW
+	Bandwidth 221 kHz
+	Linearity error 5.6 %
+	Input range ±80 mV
+
+9a) Liu, W., & Liu, S. (2010). Design of a CMOS low-power and low voltage 4 quadrant
+ analog multiplier. Analog Integrated Circuits and Signals Processing, 63, 307–312.
+	Power 6.7 µW
+	Bandwidth 268 kHz
+	Linearity error 5.2 %
+	Input range ±120 mV
+
+9b) Pesavento, A., & Kosh, C. (1999). A wide linear range 4 quadrant
+	multiplier in sub-threshold CMOS. International Symposium on
+	Circuits and Systems, 2, 240–243.
+	Power 1 µW
+	Bandwidth 10 kHz
+	Linearity error NA
+	Input range ±2 V
+
+12) Low Voltage Low Power CMOS Four-Quadrant Analog Multiplier for Neural Network Applications
+	A new low power CMOS four quadrant analog
+	multiplier based on the operation of MOS transistors in linear
+	region is presented. The simulated performances prove that it is
+	possible to achieve an high input to supply ratio without a
+	considerable amount of biasing current. Unlike almost all other
+	designs of Four Quadrant Multiplier in literature, this circuit
+	allows a very low power dissipation (6pW for cell) using both low
+	biasing current (4pA) and a 1SVsupply.
+
+	Power 6µW Vsupply 1.5V
+	Area for cell 94µmx64µm
+	Input Voltage Range +- 2.5 Vpp
+	BW 	600KHz 
+
