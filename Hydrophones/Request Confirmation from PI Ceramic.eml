@@ -1,0 +1,657 @@
+Received: from BN8NAM11HT195.eop-nam11.prod.protection.outlook.com
+ (2603:10a6:800:d2::22) by VI1PR06MB6543.eurprd06.prod.outlook.com with HTTPS
+ via VI1PR08CA0192.EURPRD08.PROD.OUTLOOK.COM; Wed, 27 May 2020 09:07:05 +0000
+Received: from BN8NAM11FT024.eop-nam11.prod.protection.outlook.com
+ (2a01:111:e400:fc4b::4f) by
+ BN8NAM11HT195.eop-nam11.prod.protection.outlook.com (2a01:111:e400:fc4b::336)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3021.23; Wed, 27 May
+ 2020 09:07:04 +0000
+Authentication-Results: spf=none (sender IP is 194.254.240.20)
+ smtp.mailfrom=mail.pi.ws; hotmail.com; dkim=none (message not signed)
+ header.d=none;hotmail.com; dmarc=none action=none
+ header.from=mail.pi.ws;compauth=fail reason=001
+Received-SPF: None (protection.outlook.com: mail.pi.ws does not designate
+ permitted sender hosts)
+Received: from zmtain01.partage.renater.fr (194.254.240.20) by
+ BN8NAM11FT024.mail.protection.outlook.com (10.13.177.38) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3021.23 via Frontend Transport; Wed, 27 May 2020 09:07:03 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:7A3DE6BEF9B2A00EF59FFA38914683260D44F0EB1E7DBB8E1057B76DFD7A564E;UpperCasedChecksum:66C4438479D41822C98A83F3CD3163022A7838020AAFF5266664114FA4E7071C;SizeAsReceived:2669;Count:21
+Received: from localhost (localhost [127.0.0.1])
+	by zmtain01.partage.renater.fr (Postfix) with ESMTP id 17CB0C8027;
+	Wed, 27 May 2020 11:07:03 +0200 (CEST)
+Received: from zmtain01.partage.renater.fr ([127.0.0.1])
+	by localhost (zmtain01.partage.renater.fr [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id BKQnh2Va49Lm; Wed, 27 May 2020 11:07:03 +0200 (CEST)
+Received: from mxb1-2.relay.renater.fr (mxb1-2.relay.renater.fr [194.214.201.9])
+	by zmtain01.partage.renater.fr (Postfix) with ESMTPS id F1C56C7C66
+	for <vgies@univ-tln.fr>; Wed, 27 May 2020 11:07:02 +0200 (CEST)
+Received: from physikinstrumente-2018.ka.de.avenit.com (mailout.physikinstrumente.de [213.144.14.183])
+	(using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mxb1-2.relay.renater.fr (asm) with ESMTPS id F418A206B8
+	for <vgies@univ-tln.fr>; Wed, 27 May 2020 11:06:51 +0200 (CEST)
+Received: from www.piceramic.com (cloudfront.physikinstrumente.com [127.0.0.1])
+	by physikinstrumente-2018.ka.de.avenit.com (Postfix) with ESMTP id 748AE1037581
+	for <vgies@univ-tln.fr>; Wed, 27 May 2020 11:06:47 +0200 (CEST)
+Message-ID: <0fab7acb4cfbf1119d3758af31a79a59@www.piceramic.com>
+Date: Wed, 27 May 2020 11:06:47 +0200
+Subject: Request Confirmation from PI Ceramic
+From: PI Ceramic <noreply@mail.pi.ws>
+Reply-To: Physik Instrumente (PI) <noreply@mail.pi.ws>
+To: "Mr. Gies" <vgies@univ-tln.fr>
+Content-Type: multipart/mixed;
+ boundary="_=_swift_v4_1590570407_89f0c85a4f7184a5e5e9df2f19e424f6_=_"
+X-Mailer: TYPO3
+X-Original-Source-IP: 213.144.14.183
+X-Renater-SpamState: 0
+X-Renater-SpamScore: -87
+X-Renater-SpamCause: gggruggvucftvghtrhhoucdtuddrgeduhedruddvgedgtdelucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecutffgpfetvffgtfdpggftfghnshhusghstghrihgsvgenuceurghilhhouhhtmecufedttdenucesvcftvggtihhpihgvnhhtshculddquddttddmnegfrhhlucfvnfffucdludefmdenucfjughrpefkfffuhfhrvfggtgfrofesmhdtjhhtredtjeenucfhrhhomheprffkucevvghrrghmihgtuceonhhorhgvphhlhiesmhgrihhlrdhpihdrfihsqeenucggtffrrghtthgvrhhnpeduvefguefhgfelfffgudevhfeiteetfffggeetjeeutdegieelkeeghfevtdejjeenucffohhmrghinhepphhitggvrhgrmhhitgdrtghomhdplhhinhhkvgguihhnrdgtohhmpdihohhuthhusggvrdgtohhmnecukfhppedvudefrddugeegrddugedrudekfeenucevlhhushhtvghrufhiiigvpedtnecurfgrrhgrmhepmhhouggvpehsmhhtphdphhgvlhhopehphhihshhikhhinhhsthhruhhmvghnthgvqddvtddukedrkhgrrdguvgdrrghvvghnihhtrdgtohhmpdhinhgvthepvddufedrudeggedrudegrddukeefpdhmrghilhhfrhhomhepnhhorhgvphhlhiesmhgrihhlrdhpihdrfihspdhrtghpthhtohepvhhgihgvshesuhhnihhvqdhtlhhnrdhfrh 
+X-Renater-ServerName: mxb1-2.relay.renater.fr
+X-Bizanga: IMP - mxb1-2.relay.renater.fr
+X-IncomingHeaderCount: 21
+Return-Path: noreply@mail.pi.ws
+X-MS-Exchange-Organization-ExpirationStartTime: 27 May 2020 09:07:03.7016
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ cb056cd3-7523-4f63-a73d-08d8021d52a8
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:194.254.240.20;CTRY:FR;LANG:en;SCL:0;SRV:;IPV:NLI;SFV:NSPM;H:zmtain01.partage.renater.fr;PTR:zmtain01.partage.renater.fr;CAT:NONE;SFTY:;SFS:;DIR:INB;SFP:;
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ BN8NAM11FT024.eop-nam11.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/27/2020 9:02:17 AM
+X-MS-Office365-Filtering-Correlation-Id: cb056cd3-7523-4f63-a73d-08d8021d52a8
+X-MS-TrafficTypeDiagnostic: BN8NAM11HT195:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 194.254.240.20
+X-SID-PRA: NOREPLY@MAIL.PI.WS
+X-SID-Result: NONE
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 0
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 May 2020 09:07:03.5797
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: cb056cd3-7523-4f63-a73d-08d8021d52a8
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN8NAM11HT195
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6599381
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3045.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000282)(90000001)(90005001)(90027001)(9000001)(9010001)(5061607266)(5061608174)(4900115)(58390011)(98390011)(8390131)(8386120)(8377080)(8376100)(8375121)(8391040)(90065001)(90170001)(90215001)(90230001)(90260001)(4920090)(6516100)(6394001)(4950130)(4990090)(9140004);RF:JunkEmail;
+X-Message-Info:
+	qoGN4b5S4yr9ZyyEFzhGd9gYhcHMsFezmIM0VtHru5CMPvDUu6EkVIiisQWZETr1dqYLbTZa2upVLW4OR/GjcQaC0UCTzWgiwdNxjiC4hLuDXVu6Xs8yOP9TwJ+Sxtw+fpQGSbPFeHALMGmqEbfnsTcPkfER1iJqvV0yowe0WEd0oCiIumZnD2yMuF24GQX6eLQ1PzxrhT8MmnJ/22tojg==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?T25hbTAxU2xUZU10SkJsVDRvVjZQQlZXVjVkOVNWd0xoalNja04xbmJiUkRv?=
+ =?utf-8?B?ZVVBYWNZelAvUzkzSWplZm1OWEFTSkJUUkVRRm9zZWZOa2U4eEhMV2dqRm9t?=
+ =?utf-8?B?bXprK3BjNmJzQkxob2hxbWJNSDFQR0N6b25ISjVuTFlzamJmNnZqTzFadHdU?=
+ =?utf-8?B?Wm5MLzl4ZGl3SHNHeWhkbyszZjNSWkJZV2htVEpiNjE0T0hsV1V4VW9zd3Ix?=
+ =?utf-8?B?T1dVTEQ1OVRPRS9vMHlMTG9zU01LMGZQVHl0aFlDSjVqdjdidXdBck85c0RI?=
+ =?utf-8?B?eEZmNmc3ZVVia0VoQ1FXVjVPcGNaNmMvM0c1U2R1Y3dqYnFSWTNEYi9TRUp0?=
+ =?utf-8?B?NGVKckhYZXZ2VVBwRng4SWNNMDNDZFhVN1ZBS0RaZHY4OVowb0srd3JNcW9Q?=
+ =?utf-8?B?UGFGOGs4Y2RBUWNiMFZobm1ETC9UYnZMeDgxb1UrWjN1bW1ta0dqN0N3N0pp?=
+ =?utf-8?B?eWNPMUo2bHl5UHZpUWZZWWRqc0hianpCa0Y0ekcxM2NCTW9EV0ltY1BabXFO?=
+ =?utf-8?B?WFd3bVpHczJ6Y1l0djNIaGpTNTNVZmtleTNzMm1ydG1qMEtwOGRGUWdlTUx1?=
+ =?utf-8?B?MXhNN3JibEpDNk1OTk1wZTF6WGhpMkppdHEyNzRsLzFEdEZoWHVFYTJhSWlC?=
+ =?utf-8?B?MVhIdk95VVVVc3RGSlgwK2puQ1dRMkhZcFpld2ZGN3JYc1BWZkVyK3h1N2tr?=
+ =?utf-8?B?NW5kdVZRK0JUUnFLV0p0bFJjNVI4eXRwNTg2NCt0S3ptbWNRdUMzMHZoMU5i?=
+ =?utf-8?B?WnpmaEMyK1VSbzFZRUN2K0JtblhDN2dVc1NyYnlIZXIyaC84OURyak00enhW?=
+ =?utf-8?B?d1JCOVJGN3FYSXliTmZ0a3FRdk1YRjZyL0k5cGIrcEI5Z1FybE5WMDZFT0NW?=
+ =?utf-8?B?czNyTzF4MEJ3QjFxWVRNUEZJY2hibkl0Yml5SHAxVFIwWGlwZDVvN2s1UGxs?=
+ =?utf-8?B?Y1dQMFhLWXpRQTRZQUlJT2pzTkh4dWhERVlWTThJOWVpbGlZUmlQZDFHWlZZ?=
+ =?utf-8?B?ZW4zQThzM3pKVkRCUGdZMzhUdlEzV3BkV3QzNnRRWXNQcEJzRitsN2pDVk5y?=
+ =?utf-8?B?Nm0zaGY1bGxCTHAyUDBkTXd0S0IwSnhOaG4wa2RNWGRsZG0vTURKajFadlpk?=
+ =?utf-8?B?N0FaYkROS2JsOEtMMVcyaUJNcjFsRlVHbFNiem9MRWtMTGVNdDBSeFBxUno2?=
+ =?utf-8?B?YTAvTHN3YXdFRCsrRUJoYnJDRG10dVpJNUNjSFV2WUY4ZHdwdFdZUzQzL1lG?=
+ =?utf-8?B?d2FNOEg0OWV2Qk9ROGUrQ01EZjB3d2FjTWhmY29kQnBRR3ZmK0o2Tm5oSXMw?=
+ =?utf-8?B?YTFodnVrY2dYclZvdWVSdzluV3p1aWo5VE1BbmdNVnBLSWczVmg2RXhFR3NY?=
+ =?utf-8?B?S3NHRm5Bc21wSWE2YmFJQzFnVkJNU0dwK2tRK1ZRNDdGU2xZV2pyRDZiNTJK?=
+ =?utf-8?B?VVRXYXRqQkRINzRPM0gyNzNORWtXMTFhWjRZblhnNlZDV2JiczhINTdENnNB?=
+ =?utf-8?B?emdHVmIrNFJSbGM2T1VOaTM0bFhiR1JmRWVvME5FRFR1eDNmM0NGQnFuRkow?=
+ =?utf-8?Q?vXQ5+S8FUc4eLWFHxmQTKUnu3326tbJRH1A45AUD8Ne4Hh?=
+MIME-Version: 1.0
+X-EsetId: 37303A29623D7E69607D67
+
+--_=_swift_v4_1590570407_89f0c85a4f7184a5e5e9df2f19e424f6_=_
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1590570407_c1d4be1121d4055ca83bd2b0ca793df7_=_"
+
+--_=_swift_v4_1590570407_c1d4be1121d4055ca83bd2b0ca793df7_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Mr. Gies,
+ =C2=A0
+
+Thank you for considering PI Ceramic products=
+.
+ One of our local=C2=A0engineers will contact you shortly.
+You sent t=
+he following request to PI:
+                                    Your Requ=
+est:      Dear Technical support,
+We are researchers in a french universi=
+ty and we would like to build our custom hydrophones, having a wide frequen=
+cy response going from 1Hz to 100kHz (or 250 kHz in an extended version), w=
+ith a flat response (at most 10dB of sensitivity variability in the bandwid=
+th). We also would like to have an omnidirectional response. What type of p=
+iezo ceramics do you recommend ? What would be the prices ? Also, what char=
+ge amplifier circuit do you recommend ?
+Best regards
+Valentin Gies
+To=
+ulon University
+Tel : +33 6 28 35 76 85
+email : vgies@univ-tln.fr =20
+ =
+                                                       Concerned Applicatio=
+ns:      Hydrophones =20
+                                                  =
+      Upload Files:                     =20
+                               =
+                         Salutation:      Mr. =20
+                         =
+                               Academic Title:      Dr. =20
+               =
+                                         First Name:      Valentin =20
+    =
+                                                    Last Name:      Gies  =
+
+                                                        Company / Organi=
+zation:      University Toulon =20
+                                        =
+                Street:      - =20
+                                        =
+                Zip / Postal Code:      83130 =20
+                         =
+                               City:      Toulon =20
+                      =
+                                  Country:      France =20
+                =
+                                                Email:      vgies@univ-tln.=
+fr =20
+                                                        Phone:      =
++33628357685 =20
+                                                        Pr=
+ivacy Policy:                          I have read the Privacy Policy and a=
+gree to its terms and conditions.                 =20
+                     =
+                                   Captcha - Please enter the result:      =
+10 =20
+                   =20
+Best regards
+PI Ceramic
+ Lindenstra=C3=
+=9Fe
+ 07589 Lederhose
+ Germany
+Phone=C2=A0+49 36604 882-0 [tel:+49366=
+048820]
+ Fax =C2=A0 =C2=A0=C2=A0+49 36604 882- 4109
+ Email info@piceram=
+ic.com [mailto:info@piceramic.com]
+ www.piceramic.com [https://www.picera=
+mic.com/]
+{powermail_pi_logo}
+Follow us on: LinkedIn [https://www.linke=
+din.com/company/pi-ceramic-gmbh/] | Youtube [https://www.youtube.com/user/p=
+hyinst?sub_confirmation=3D1] | Blog [https://www.piceramic.com/en/blog/]
+=
+Gesch=C3=A4ftsf=C3=BChrer: Dr. Patrick Pertsch, Dr. Peter Schittenhelm;
+ =
+Reg.-Gericht: HRB 203.582, Amtsgericht Jena; Ust.-ID-Nr.: DE 155932487;
+L=
+egal Information [https://www.piceramic.com/en/company/legal-information/]=
+=C2=A0|=C2=A0Privacy Policy [https://www.piceramic.com/en/company/legal-inf=
+ormation/privacy-policy-pi-ceramic/]
+This message, and any associated fil=
+es, are for the attention and use of the individual or entity to which it i=
+s addressed and may contain information that is legally privileged and conf=
+idential, subject to copyright, or that constitutes a trade secret. The leg=
+al privilege or associated confidentiality is not waived or lost by reason =
+of mistaken transmission. Where opinions are expressed, they are not necess=
+arily those of PI Ceramic GmbH, Lindenstrasse, 07589 Lederhose, Germany, Ph=
+one +49 36604 882-0, Fax +49 36 604 88 2-4109.
+
+--_=_swift_v4_1590570407_c1d4be1121d4055ca83bd2b0ca793df7_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+        <style type=3D"=E2=80=9Dtext/css=E2=80=9D">
+            body {
+                font-family: Calibri;
+                font-size: 14px;
+            }
+
+            ul {
+                margin-top:0px;
+                margin-bottom:0px;
+            }
+        </style>
+    </head>
+    <body>
+       =20
+ =20
+    <div class=3D"header"><p>Dear Mr. Gies,<br> &nbsp;</p></div><p>Thank yo=
+u for considering PI Ceramic products.<br> One of our local&nbsp;engineers =
+will contact you shortly.</p>
+<p>You sent the following request to PI:</p>
+
+	<p>
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Your Request</b>:
+ =20
+
+    Dear Technical support,<br>
+We are researchers in a french university and we would like to build our cu=
+stom hydrophones, having a wide frequency response going from 1Hz to 100kHz=
+ (or 250 kHz in an extended version), with a flat response (at most 10dB of=
+ sensitivity variability in the bandwidth). We also would like to have an o=
+mnidirectional response. What type of piezo ceramics do you recommend ? Wha=
+t would be the prices ? Also, what charge amplifier circuit do you recommen=
+d ?<br>
+Best regards<br>
+Valentin Gies<br>
+Toulon University<br>
+Tel : &#43;33 6 28 35 76 85<br>
+email : vgies@univ-tln.fr
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Concerned Applications</b>:
+ =20
+
+    Hydrophones
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Upload Files</b>:
+ =20
+
+   =20
+       =20
+     =20
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Salutation</b>:
+ =20
+
+    Mr.
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Academic Title</b>:
+ =20
+
+    Dr.
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>First Name</b>:
+ =20
+
+    Valentin
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Last Name</b>:
+ =20
+
+    Gies
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Company / Organization</b>:
+ =20
+
+    University Toulon
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Street</b>:
+ =20
+
+    -
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Zip / Postal Code</b>:
+ =20
+
+    83130
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>City</b>:
+ =20
+
+    Toulon
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Country</b>:
+ =20
+
+    France
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Email</b>:
+ =20
+
+    vgies@univ-tln.fr
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Phone</b>:
+ =20
+
+    &#43;33628357685
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Privacy Policy</b>:
+ =20
+
+   =20
+       =20
+            I have read the Privacy Policy and agree to its terms and condi=
+tions.
+         =20
+     =20
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+		=09
+       =20
+         =20
+             =20
+
+
+
+
+
+    <b>Captcha - Please enter the result</b>:
+ =20
+
+    10
+ =20
+<br>
+           =20
+       =20
+		=09
+	=09
+	</p>
+
+<p>Best regards</p>
+<p><strong>PI Ceramic</strong><br> Lindenstra=C3=9Fe<br> 07589 Lederhose<br=
+> Germany</p>
+<p>Phone&nbsp;<a href=3D"tel:&#43;49366048820">&#43;49 36604 882-0</a><br> =
+Fax &nbsp; &nbsp;&nbsp;&#43;49 36604 882- 4109<br> Email <a href=3D"mailto:=
+info@piceramic.com">info@piceramic.com</a><br> <a href=3D"https://www.picer=
+amic.com/" target=3D"_blank">www.piceramic.com</a></p>
+<p><img src=3D"cid:physikinstrumentelogo"></p>
+<p>Follow us on: <a href=3D"https://www.linkedin.com/company/pi-ceramic-gmb=
+h/" target=3D"_blank">LinkedIn</a> | <a href=3D"https://www.youtube.com/use=
+r/phyinst?sub_confirmation=3D1" target=3D"_blank">Youtube</a> | <a href=3D"=
+https://www.piceramic.com/en/blog/" target=3D"_blank">Blog</a></p>
+<p class=3D"caption_container">Gesch=C3=A4ftsf=C3=BChrer: Dr. Patrick Perts=
+ch, Dr. Peter Schittenhelm;<br> Reg.-Gericht: HRB 203.582, Amtsgericht Jena=
+; Ust.-ID-Nr.: DE 155932487;</p>
+<p class=3D"caption_container"><a href=3D"https://www.piceramic.com/en/comp=
+any/legal-information/" target=3D"_blank">Legal Information</a>&nbsp;|<a hr=
+ef=3D"https://www.piceramic.com/en/company/legal-information/privacy-policy=
+-pi-ceramic/" target=3D"_blank">&nbsp;Privacy Policy</a></p>
+<p class=3D"caption_container">This message, and any associated files, are =
+for the attention and use of the individual or entity to which it is addres=
+sed and may contain information that is legally privileged and confidential=
+, subject to copyright, or that constitutes a trade secret. The legal privi=
+lege or associated confidentiality is not waived or lost by reason of mista=
+ken transmission. Where opinions are expressed, they are not necessarily th=
+ose of PI Ceramic GmbH, Lindenstrasse, 07589 Lederhose, Germany, Phone &#43=
+;49 36604 882-0, Fax &#43;49 36 604 88 2-4109.</p>
+ =20
+
+    </body>
+</html>
+
+--_=_swift_v4_1590570407_c1d4be1121d4055ca83bd2b0ca793df7_=_--
+
+--_=_swift_v4_1590570407_89f0c85a4f7184a5e5e9df2f19e424f6_=_
+Content-Type: image/png; name=logo.png
+Content-Transfer-Encoding: base64
+X-Attachment-Id: <physikinstrumentelogo>
+Content-ID: <physikinstrumentelogo>
+Content-Disposition: inline; filename=logo.png
+
+iVBORw0KGgoAAAANSUhEUgAAAD8AAAAfCAYAAABQ8xXpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1
+ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0
+YW5jZUlEPSJ4bXAuaWlkOjk0RkQxNzU1RjVBQjExRTU5NjdFRUMzOEQyN0FCMzAwIiB4bXBNTTpE
+b2N1bWVudElEPSJ4bXAuZGlkOjk0RkQxNzU2RjVBQjExRTU5NjdFRUMzOEQyN0FCMzAwIj4gPHht
+cE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTRGRDE3NTNGNUFCMTFF
+NTk2N0VFQzM4RDI3QUIzMDAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTRGRDE3NTRGNUFC
+MTFFNTk2N0VFQzM4RDI3QUIzMDAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94
+OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz72fIkEAAACg0lEQVR42mJkCJrzlIGBgZeBPgBk
+1wUgfgDEe4D4FBB/JlJvPhA3U9Etn1mAhBQD/YAGFINABRC/A+INQDwZGij4AD+VI4mXiWFggRAQ
+JwHxeSCeBsTceNT+pbLd/0Ge/84wOEAmEF8EYh46ef4XIzDPKwEZoOT/D0lCEIgPAzE7Hs1vgdgB
+iH+jiTMDMRPUTFBS1QZiCyD2B2I+Ihx1FohNcKQSMVCMoYk3AnE4ATODgfgqEp8RFJggB94jM6R/
+AvEVIjxzEJqkQY7PgToWHzAG4iyoHmTwDorRwRMi3HDq/9pkDHW48rwwNHTwAVAMs5GQzEAObwLi
+FCLU1pFgLg8RasSxCQ5EgTcXiE8S4VgbWjtkoEr7ZUSoMR2unn9EhBp2YqusgfA8IwV6JahoPuNQ
+i3lPItR8G8zJntzkZgDEfkSoOzfY8/wvEtW7AvF+ItQ9gTayaApYaGw+KxArALE5tJUVQKS+Wnrk
+PUo8D2oIXceT/JmgzVsJEs3dDMQLBrvnWZC6p9QCm6B9ALqAge7SwsBzIM6lp8fpkefxgTdAvAua
+zNdDO0oMQ8XzIMfuhnaFGbFUfzCxP0D8FVpvvwbiG0B8DUp/G8jkRonnQf15X4YhDCjJ88yDqMwY
+kAKPZSR7nmHU88PM8++I6Lj8I6NtTwvwgwg1H3HlWV4cTVcmIvI7aJT3N5b+9T9oNfafip5kgw5w
+/EfrWRIzhifBGDz3OVL1C3YjC7S+5cXiAQ4CBooA8X0cqQk08qsHxI+p6PkMIG5hQB1iB3mekwi9
+26BuYkRy40dKpqsYoR0XetUEAgzkT1dh08c7ogs8UOw8Y6DNLO0fKpsHKrQ+U9G8zwABBgBe6HIH
+/LpPHQAAAABJRU5ErkJggg==
+
+--_=_swift_v4_1590570407_89f0c85a4f7184a5e5e9df2f19e424f6_=_--

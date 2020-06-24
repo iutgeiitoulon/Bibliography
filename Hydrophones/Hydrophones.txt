@@ -1,0 +1,20 @@
+
+
+Alibaba Reference Hydrophone RHS-30 : 
+	https://french.alibaba.com/product-detail/reference-hydrophone-rhs-30-60797838465.html
+	Sensibilité : -192dB 1V /uPa
+	BP -192dB entre 0.02 et 50kHz (-195dB à )
+	
+Alibaba Reference Hydrophone RHSO-20 : 
+	https://french.alibaba.com/product-detail/hydrophone-rhso-20-60764262162.html
+	Sensibilité : -202dB 1V /uPa
+	BP -192dB entre 1 et 100kHz (-202dB à 1Hz, -205dB à 100kHz)
+	
+Alibaba Reference Hydrophone RHS-15 : 
+	https://french.alibaba.com/product-detail/hydrophone-rhs-15-60764265383.html
+	Sensibilité : -202dB 1V /uPa
+	BP -200dB entre 1 et 100kHz, utilisable jusqu'à 150kHz (-200dB à 1Hz, -200dB à 100kHz)
+	
+	
+	
+	

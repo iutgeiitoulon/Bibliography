@@ -1,0 +1,377 @@
+Received: from HK2APC01HT166.eop-APC01.prod.protection.outlook.com
+ (2603:10a6:802:59::28) by VI1PR06MB6543.eurprd06.prod.outlook.com with HTTPS
+ via VI1P195CA0075.EURP195.PROD.OUTLOOK.COM; Wed, 27 May 2020 12:50:34 +0000
+Received: from HK2APC01FT016.eop-APC01.prod.protection.outlook.com
+ (2a01:111:e400:7ebc::43) by
+ HK2APC01HT166.eop-APC01.prod.protection.outlook.com (2a01:111:e400:7ebc::469)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3045.17; Wed, 27 May
+ 2020 12:50:32 +0000
+Authentication-Results: spf=none (sender IP is 115.124.28.195)
+ smtp.mailfrom=piezohannas.com; hotmail.com; dkim=none (message not signed)
+ header.d=none;hotmail.com; dmarc=none action=none
+ header.from=piezohannas.com;compauth=fail reason=001
+Received-SPF: None (protection.outlook.com: piezohannas.com does not designate
+ permitted sender hosts)
+Received: from out28-195.mail.aliyun.com (115.124.28.195) by
+ HK2APC01FT016.mail.protection.outlook.com (10.152.248.193) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3045.17 via Frontend Transport; Wed, 27 May 2020 12:50:32 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:19AA945FBABB28BF6A3413E0D28EA5A227FD35B53B34F1F49EE01736EA6A38D9;UpperCasedChecksum:48A2AAC1A336FF43191F493F27A00A4A75B25F4E4CBD2C96055A89A39D056491;SizeAsReceived:937;Count:13
+X-Alimail-AntiSpam: AC=CONTINUE;BC=0.1192206|-1;CH=green;DM=|CONTINUE|false|;DS=CONTINUE|ham_social|0.0118749-0.00308156-0.985044;FP=0|0|0|0|0|-1|-1|-1;HT=e02c03298;MF=mary@piezohannas.com;NM=1;PH=DS;RN=1;RT=1;SR=0;TI=SMTPD_---.HeNzxca_1590583831;
+Received: from DESKTOP-MA9K8LR(mailfrom:mary@piezohannas.com fp:SMTPD_---.HeNzxca_1590583831)
+          by smtp.aliyun-inc.com(10.147.42.198);
+          Wed, 27 May 2020 20:50:31 +0800
+Date: Wed, 27 May 2020 20:50:31 +0800
+From: "mary@piezohannas.com" <mary@piezohannas.com>
+To: "GIES Valentin" <vgies@hotmail.com>
+Subject: Re: piezo hemisphere frequency response
+References: <001001725586cf61-0100-86dc3417-6b6e-49f8-aef2-b1dedf42613e@mta.tawk.to>
+X-Has-Attach: no
+X-Mailer: Foxmail 7, 2, 8, 379[cn]
+Message-ID: <202005272050309584041@piezohannas.com>
+Content-Type: multipart/alternative;
+	boundary="----=_001_NextPart437502163355_=----"
+X-IncomingHeaderCount: 13
+Return-Path: mary@piezohannas.com
+X-MS-Exchange-Organization-ExpirationStartTime: 27 May 2020 12:50:32.6751
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 23a2b527-a31e-4a71-9fcd-08d8023c8b07
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:115.124.28.195;CTRY:CN;LANG:en;SCL:0;SRV:;IPV:NLI;SFV:NSPM;H:out28-195.mail.aliyun.com;PTR:out28-195.mail.aliyun.com;CAT:NONE;SFTY:;SFS:;DIR:INB;SFP:;
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ HK2APC01FT016.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/27/2020 12:47:17 PM
+X-MS-Office365-Filtering-Correlation-Id: 23a2b527-a31e-4a71-9fcd-08d8023c8b07
+X-MS-TrafficTypeDiagnostic: HK2APC01HT166:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 115.124.28.195
+X-SID-PRA: MARY@PIEZOHANNAS.COM
+X-SID-Result: NONE
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 0
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 May 2020 12:50:32.3472
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 23a2b527-a31e-4a71-9fcd-08d8023c8b07
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: HK2APC01HT166
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.7013466
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3045.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000282)(90000001)(90005001)(90027001)(9000001)(9005001)(9010001)(9020002)(5061607266)(5061608174)(4900115)(58390011)(98390011)(8390131)(8376100)(8377080)(8375121)(8391040)(90065001)(90215001)(90260001)(4920090)(6516100)(6394001)(4950130)(4990090)(9140004);RF:JunkEmail;
+X-Message-Info:
+	qoGN4b5S4yq407B1ogTEr5cPD8Nzwob/EsiHomBIt7grB9E37SbpHK8bdbapQlf0JALwA7gb+T07lvzBOq2w2YTz787ixCJWrolIN9TH1ZCpdq4IVK9FqApAxoU8Em7Jg+Jdu+NSaCFlXbob48ix0Hdg/PKai1Q47MIoiLGFjhquiU+hWWuL9eKJ7BReMF3mhfRN1fwc4Mw+hwFMCrfhZg==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info:
+	=?gb2312?B?c2lENThzZVl0UEFUZ0h1aDRuNVFZL09IcytGWFlSV0hUckhzQms5aEYvM2RF?=
+ =?gb2312?B?aHdlb3pXRHRvMzZSdFVkOWlzNDFyNVRoQ1p6NldXNFFYR3FJMlYvZVJXOTJZ?=
+ =?gb2312?B?T2JvcGw1cHFvNnVhRXpibnFndVk3RmdjM1RkamJqM1owTTJ3dlpwOUhEaU1M?=
+ =?gb2312?B?R25xMzBnYm1SZDhsb3JkRVoxLzdNazY3RnBybnNCSnpianQwNTdqZmZPa2Jp?=
+ =?gb2312?B?YkV0SVVtbEx5b3RtQWtEQXdrWmJqeUw1NEJGYmJwYklEdEl3WXM4NnpUUmRp?=
+ =?gb2312?B?aWFpMjk3eGdXMGhjaEJ0bzNkaFduUVM1MG8vdHhiM0FJNzdzUWlYZHhDckxE?=
+ =?gb2312?B?TU5SYTVEQWVid3JWbXhKNGVqbFFUWUZtVWZsUDJTZktsWk05Z2F1QjVOY2NU?=
+ =?gb2312?B?ME9FUHlnWE5TeWZ5ckwxdFd3WVIrNldieHg0bnR5RkJxYld2TGFuTFE4cUNU?=
+ =?gb2312?B?QWVOV0pXeVFweVI5cEdDc3FGM1paLy9zM2lkZnA5aUVFMGpZL2U4ODJwVXZW?=
+ =?gb2312?B?eGNyMCttNW9HcDdvdmV3OWhaTEw3WmZGV0VjQ1prRFdIZ01IRndYK1Y5TTBK?=
+ =?gb2312?B?a0IzTWFRQ1NGZWhyeDlGaEt5aHFiY0ZZRExJM1lOZ3o2WFk2MHA4WUNwRTlO?=
+ =?gb2312?B?NXNpQnNVRG5LcjZHQ21LdmVwQ0ZIaVpMN1VEN005QnJVWFhCSWc1aGhyS2lv?=
+ =?gb2312?B?UkpLZExmby9vdC8ya1IwSkY3MDlDYmFGQmVoRy9weUVyc2w2YVo4c1hVbUxq?=
+ =?gb2312?B?a0xOQ3UvYUxTSkxrREJtSjJsdXR2UW95NzQxZlZnUGt3K2s1dFdJMTl1NUw1?=
+ =?gb2312?B?c0tmd0dzNzJFbmNRcXlsNEs1Z2R1ZzRycFNDdEs2dDBzK2w0MW9hczFIZ3hS?=
+ =?gb2312?B?bGE1Q0RJektxVGRIZGxrRDZsK0NnaUg3L29jUlZzemRMd1ZtOWtCYlpRZDVy?=
+ =?gb2312?B?ZEF1eWNEV3FQeEhUYmZEYzdXOGFVRHdnY2UzdzhxMHZaRkdtSVdvcG1nZDc0?=
+ =?gb2312?B?TzVnY0Y4WGM3L1RjMGdOSXl3bnZFbjVJT3YrcnFQMDBwYzNOSjhyazJranRo?=
+ =?gb2312?B?bnJ2WEo2NlUrdGw5NnViY1I4NG96c0pwRmc2dHlxc1pXdkhpR2hXMlczS2hE?=
+ =?gb2312?B?RE9nME1BVi9QL05ZTE16cnlVeXMzcmU4VEhpVEE2akcyZjV0azRWd2JZaWg5?=
+ =?gb2312?B?enBGTll1TFFhdVdJclVBcGQ3V2w1SnBLTEl4N09xMFBCbEUxRXRMWkN4TWNj?=
+ =?gb2312?B?aEhCektHOXpnY1l2NWdYZEEwVzdHTk1YREtsQ1UvVXJYMEh3WFZPZFp2V1hL?=
+ =?gb2312?B?M21uSUVPR0pCZkNocTdBQjVoVmh4ck83ZWdpOENRQzAzYWU2ZlQxWmpHTkdt?=
+ =?gb2312?B?MTJ5VkNRbVYzMnJPeUhyMkJ5aXVjQW45akI5UG45NEtsOG9lUGo1aHBUSUdS?=
+ =?gb2312?B?RTEwQ001eWhUUXhyVzlEZ3BuRFV1VGNHakQweGtOcG5NL01tWkpWSk1VRktN?=
+ =?gb2312?B?WDNGRDgzNVNiN3p0L21xM2ROcG0wbE9RUS83K1diMEtaemRjcnU1NkFYUG0w?=
+ =?gb2312?B?SlMweVBWWkZlZlBrVngxaExlcW1YZVQrTE5XL1JmcnR5eUdILytDc1lGckhq?=
+ =?gb2312?B?eFZYSUY0Q2Y4aFhvU3Q2MFowcDZWMnl6ZWVWa0FQUjJJcktVdzZ1ak0ySnQ2?=
+ =?gb2312?B?eFZrMlFucmtieEpXb0VUQUcvQmc0bkptREp5bG5xMEN2N1IyWEV6OWRYMDNJ?=
+ =?gb2312?Q?rcXk2eG88DjjqFsXwA=3D?=
+MIME-Version: 1.0
+X-EsetId: 37303A29623D7E69607D67
+
+------=_001_NextPart437502163355_=----
+Content-Type: text/plain;
+	charset="GB2312"
+Content-Transfer-Encoding: base64
+
+RGVhciBHSUVTIDoNCg0KSG93IGFyZSB5b3UgPw0KDQpDYW4geW91IHRlbGwgdXMgdGhlIGRpbWVu
+c2lvbiBhbmQgbWF0ZXJpYWwgb2YgcGllem8gaGVtaXNwaGVyZSA/DQoNCldhaXRpbmcgZm9yIHlv
+dXIgcmVwbHkNCkJlc3QgUmVnYXJkcw0KDQpNYXJ5DQoNCg0KDQpNYXJ5IFpoYW5nICAgIFNhbGVz
+IERpcmVjdG9yDQpQSUVaT0hBTk5BUyBURUNILihXVUhBTikgQ08uLCBMSU1JVEVEIA0KTm8uIDQ1
+NiBXdSBMdW8gUm9hZCwgV3VjaGFuZyBEaXN0cmljdCAsV3VoYW4gQ2l0eSxIdUJlaSBQcm92aW5j
+ZSAgLENoaW5hDQpNOiArODYtMTg5LTg2MTktNjY3NA0KU2t5cGU6IGxpdmU6bWFyeV8xNDM5OCAg
+IEU6bWFyeUBwaWV6b2hhbm5hcy5jb20gIA0KVzogd3d3LnBpZXpvaGFubmFzLmNvbS8NCmh0dHA6
+Ly9waWV6b2hhbm5hcy5tYW51ZmFjdHVyZXIuZ2xvYmFsc291cmNlcy5jb20gDQpwaWV6b2hhbm5h
+cy5lbi5tYWRlLWluLWNoaW5hLmNvbQ0KT25jZSBJIGFtIG5vdCBhdmFpbGFibGUsIHdlbGNvbWUg
+dG8gY29udGFjdCB3aXRoIA0KQmlsbHkgICBDRU8NCmUtbWFpbDogYmlsbHlAcGllem9oYW5uYXMu
+Y29tICAgU2t5cGUgOkJpbGx5LXBpZXpvaGFubmFzICAgTW9iaWxlo7orODYtMTU5MjcyODY1ODkN
+CiANCkZyb206IHRhd2sudG8NCkRhdGU6IDIwMjAtMDUtMjcgMTc6NDYNClRvOiBNYXJ5IFpoYW5n
+DQpTdWJqZWN0OiBDaGF0IHRyYW5zY3JpcHQgb24gcGllem9oYW5uYXMuY29tIHN0YXJ0ZWQgb24g
+V2VkbmVzZGF5LCBNYXkgMjcsIDIwMjAsIGF0IDA5OjExIChHTVQrMCkNCkNoYXQgb24gcGllem9o
+YW5uYXMuY29tIA0KQ29udmVyc2F0aW9uIHN0YXJ0ZWQgb24gOiBXZWRuZXNkYXksIE1heSAyNywg
+MjAyMCwgYXQgMDk6MTEgKEdNVCswKSANClswOToxM10gR0lFUyBWYWxlbnRpbjogTmFtZSA6IEdJ
+RVMgVmFsZW50aW4gDQpFbWFpbCA6IHZnaWVzQGhvdG1haWwuY29tIA0KUXVlc3Rpb24gOiBXZSBo
+YXZlIGEgcXVlc3Rpb24gYWJvdXQgeW91ciBwaWV6byBoZW1pc3BoZXJlIGZyZXF1ZW5jeSByZXNw
+b25zZSANCk5vIHRhd2sudG8gbGl2ZSBjaGF0IGFjY291bnQgPyAgQ3JlYXRlIG9uZSBmb3IgZnJl
+ZSBoZXJlISANCg==
+
+------=_001_NextPart437502163355_=----
+Content-Type: text/html;
+	charset="GB2312"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dgb2312"><=
+style>body { line-height: 1.5; }blockquote { margin-top: 0px; margin-bottom=
+: 0px; margin-left: 0.5em; }p { margin-top: 0px; margin-bottom: 0px; }div.f=
+oxdiv20200527204920816663 { }body { font-size: 10.5pt; font-family: 'Micros=
+oft YaHei UI'; color: rgb(0, 0, 0); line-height: 1.5; }</style></head><body=
+>=0A=
+	=0A=
+<!--[if (mso 12)|(mso 14)|(mso 15)]>=0A=
+<style>=0A=
+#innerTable {=0A=
+	width: 600px;=0A=
+}=0A=
+</style>=0A=
+<![endif]-->=0A=
+	=0A=
+<!--[if (mso 12)|(mso 14)|(mso 15)]>=0A=
+<style>=0A=
+#innerTable {=0A=
+	width: 600px;=0A=
+}=0A=
+</style>=0A=
+<![endif]-->=0A=
+<div><span></span>Dear&nbsp;<span style=3D"font-family: ''; font-size: 10.5=
+pt; line-height: 1.5; background-color: window;">GIES :</span></div><div><s=
+pan style=3D"font-family: ''; font-size: 10.5pt; line-height: 1.5; backgrou=
+nd-color: window;"><br></span></div><div><span style=3D"font-family: ''; fo=
+nt-size: 10.5pt; line-height: 1.5; background-color: window;">How are you ?=
+</span></div><div><span style=3D"font-family: ''; font-size: 10.5pt; line-h=
+eight: 1.5; background-color: window;"><br></span></div><div><span style=3D=
+"font-family: ''; font-size: 10.5pt; line-height: 1.5; background-color: wi=
+ndow;">Can you tell us the dimension and material of piezo hemisphere ?</sp=
+an></div><div><span style=3D"font-family: ''; font-size: 10.5pt; line-heigh=
+t: 1.5; background-color: window;"><br></span></div><div><span style=3D"fon=
+t-family: ''; font-size: 10.5pt; line-height: 1.5; background-color: window=
+;">Waiting for your reply</span></div><div><span style=3D"font-family: ''; =
+font-size: 10.5pt; line-height: 1.5; background-color: window;">Best Regard=
+s</span></div><div><span style=3D"font-family: ''; font-size: 10.5pt; line-=
+height: 1.5; background-color: window;"><br></span></div><div><span style=
+=3D"font-family: ''; font-size: 10.5pt; line-height: 1.5; background-color:=
+ window;">Mary</span></div>=0A=
+<div><br></div><hr style=3D"width: 210px; height: 1px;" color=3D"#b5c4df" s=
+ize=3D"1" align=3D"left">=0A=
+<div><span><div style=3D"MARGIN: 10px; FONT-FAMILY: verdana; FONT-SIZE: 10p=
+t"><font color=3D"#1f497d" face=3D"Calibri, sans-serif" style=3D"font-size:=
+ 14px; line-height: 21px;"><span style=3D"background-color: inherit;">Mary =
+Zhang &nbsp; &nbsp;</span><span style=3D"font-size: 12px; background-color:=
+ inherit;">S</span><span style=3D"font-size: 12px; background-color: inheri=
+t;"><span style=3D"background-color: inherit;">ales Director</span></span><=
+/font><div style=3D"font-family: =CE=A2=C8=ED=D1=C5=BA=DA; font-size: 14px;=
+ line-height: 21px;"><div style=3D"font-size: 12px; background-color: inher=
+it;"><font color=3D"#1f497d" face=3D"Calibri, sans-serif" style=3D"backgrou=
+nd-color: inherit;">PIEZOHANNAS&nbsp;TECH.(WUHAN)&nbsp;CO.,&nbsp;<wbr>LIMIT=
+ED&nbsp;</font></div></div><div style=3D"font-family: =CE=A2=C8=ED=D1=C5=BA=
+=DA; font-size: 12px;"><font color=3D"#1f497d" face=3D"Calibri, sans-serif"=
+>No. 456 Wu Luo Road, Wuchang District ,Wuhan City,HuBei Province &nbsp;,Ch=
+ina</font></div><div style=3D"font-family: =CE=A2=C8=ED=D1=C5=BA=DA; font-s=
+ize: 12px;"><font face=3D"Calibri, sans-serif"><font color=3D"#ff0000" styl=
+e=3D"background-color: inherit;">M</font><font color=3D"#1f497d" style=3D"b=
+ackground-color: inherit;">:&nbsp;&#43;86-189-8619-6674</font></font></div>=
+<div style=3D"font-family: =CE=A2=C8=ED=D1=C5=BA=DA; font-size: 12px;"><fon=
+t face=3D"Calibri, sans-serif"><font color=3D"#ff0000" style=3D"background-=
+color: inherit;">Skype:</font><font color=3D"#1f497d" style=3D"background-c=
+olor: inherit;">&nbsp;live:mary_14398&nbsp;&nbsp;&nbsp;</font><font color=
+=3D"#ff0000" style=3D"background-color: inherit;">E</font><font color=3D"#1=
+f497d" style=3D"background-color: inherit;">:<a href=3D"mailto:mary@piezoha=
+nnas.com" target=3D"_blank">mar<wbr>y@piezohannas.com</a>&nbsp;&nbsp;</font=
+></font></div><div style=3D"font-family: =CE=A2=C8=ED=D1=C5=BA=DA; font-siz=
+e: 12px;"><font face=3D"Calibri, sans-serif"><font color=3D"#ff0000" style=
+=3D"background-color: inherit;">W</font><font color=3D"#1f497d" style=3D"ba=
+ckground-color: inherit;">:&nbsp;<a href=3D"http://www.piezohannas.com/" ta=
+rget=3D"_blank">www.<wbr>piezohannas.com/</a><b style=3D"color: rgb(0, 0, 0=
+); font-family: Calibri; background-color: window;"><font face=3D"=CE=A2=C8=
+=ED=D1=C5=BA=DA" style=3D"background-color: inherit;"></font></b></font></f=
+ont></div><div style=3D"font-family: =CE=A2=C8=ED=D1=C5=BA=DA; font-size: 1=
+2px;"><span style=3D"font-family: 'Calibri, sans-serif';"></span><span cali=
+bri,=3D"" sans-serif??;=3D"" font-size:=3D"" 12px;=3D"" color:=3D"" rgb(0,=
+=3D"" 0,=3D"" 0);=3D"" background-color:=3D"" rgba(0,=3D"" font-weight:=3D"=
+" normal;=3D"" font-style:=3D"" normal;text-decoration:=3D"" none;?=3D"" st=
+yle=3D"font-family: ''; font-size: 10pt; line-height: 1.5; background-color=
+: window;"><u style=3D"color: rgb(128, 0, 128); font-family: Calibri, sans-=
+serif; font-size: 12px; line-height: 18px;">http://piezohannas.manufacturer=
+.globalsources.com<span style=3D"line-height: 1.5;">&nbsp;</span></u><br></=
+span><span style=3D"background-color: window; color: rgb(31, 73, 125); font=
+-family: Calibri, sans-serif;"><span style=3D"color: purple;"><a href=3D"ht=
+tp://www.piezohannas.com/piezohannas.en.made-in-china.com" target=3D"_blank=
+" style=3D"color: purple; font-family: 'Microsoft YaHei', sans-serif;">piez=
+ohannas.en.made-in-china.<wbr>com</a></span></span></div><div style=3D"font=
+-family: =CE=A2=C8=ED=D1=C5=BA=DA; font-size: 12px;"><span style=3D"backgro=
+und-color: inherit; color: rgb(255, 0, 0); font-family: Calibri, sans-serif=
+; line-height: 1.5;">Once&nbsp;I&nbsp;am&nbsp;not&nbsp;available,&nbsp;</sp=
+an><wbr style=3D"background-color: inherit; color: rgb(255, 0, 0); font-fam=
+ily: Calibri, sans-serif; line-height: 1.5;"><span style=3D"background-colo=
+r: inherit; color: rgb(255, 0, 0); font-family: Calibri, sans-serif; line-h=
+eight: 1.5;">welcome&nbsp;to&nbsp;contact&nbsp;with&nbsp;</span></div></div=
+><div style=3D"margin: 10px;"><div style=3D"font-family: =CE=A2=C8=ED=D1=C5=
+=BA=DA; font-size: 12px;"><font color=3D"#1f497d" face=3D"Calibri, sans-ser=
+if" style=3D"background-color: inherit;">Billy&nbsp;&nbsp;&nbsp;CEO</font><=
+div style=3D"background-color: inherit;"><div style=3D"background-color: in=
+herit;"><div style=3D"background-color: inherit;"><p style=3D"margin: 5px 0=
+px; background-color: inherit;"><font face=3D"Calibri, sans-serif" style=3D=
+"background-color: inherit;"><font color=3D"#ff0000" style=3D"background-co=
+lor: inherit;">e-mail:</font></font><font face=3D"Calibri, sans-serif" styl=
+e=3D"background-color: inherit;"><font color=3D"#ff0000" style=3D"backgroun=
+d-color: inherit;">&nbsp;</font></font><span style=3D"color: rgb(0, 0, 255)=
+; font-family: Calibri; background-color: inherit;"><a href=3D"mailto:billy=
+@piezohannas.com" target=3D"_blank">billy@piezohannas.com</a>&nbsp;&nbsp;&n=
+bsp;</span><font color=3D"#ff0000" style=3D"font-family: Calibri, sans-seri=
+f; background-color: inherit;">Skype</font><font color=3D"#1f497d" style=3D=
+"font-family: Calibri, sans-serif; background-color: inherit;">&nbsp;</font=
+><span style=3D"color: rgb(0, 0, 255); font-family: Calibri; background-col=
+or: inherit;">:Billy-piezohannas &nbsp;&nbsp;</span><font color=3D"#ff0000"=
+ style=3D"font-family: Calibri, sans-serif; background-color: inherit;">Mob=
+ile</font><font color=3D"#1f497d" style=3D"font-family: Calibri, sans-serif=
+; background-color: inherit;">=A3=BA&#43;</font><span style=3D"color: rgb(0=
+, 0, 255); font-family: Calibri; background-color: inherit;">86-15927286589=
+</span></p></div></div></div></div></div></span></div>=0A=
+<blockquote style=3D"margin-top: 0px; margin-bottom: 0px; margin-left: 0.5e=
+m;"><div>&nbsp;</div><div style=3D"border:none;border-top:solid #B5C4DF 1.0=
+pt;padding:3.0pt 0cm 0cm 0cm"><div style=3D"PADDING-RIGHT: 8px; PADDING-LEF=
+T: 8px; FONT-SIZE: 12px;FONT-FAMILY:tahoma;COLOR:#000000; BACKGROUND: #efef=
+ef; PADDING-BOTTOM: 8px; PADDING-TOP: 8px"><div><b>From:</b>&nbsp;<a href=
+=3D"mailto:noreply@tawk.to">tawk.to</a></div><div><b>Date:</b>&nbsp;2020-05=
+-27&nbsp;17:46</div><div><b>To:</b>&nbsp;<a href=3D"mailto:mary@piezohannas=
+.com">Mary Zhang</a></div><div><b>Subject:</b>&nbsp;Chat transcript on piez=
+ohannas.com started on Wednesday, May 27, 2020, at 09:11 (GMT&#43;0)</div><=
+/div></div><div><div class=3D"FoxDiv20200527204920816663">=0A=
+	=0A=
+<!--[if (mso 12)|(mso 14)|(mso 15)]>=0A=
+<style>=0A=
+#innerTable {=0A=
+	width: 600px;=0A=
+}=0A=
+</style>=0A=
+<![endif]-->=0A=
+	=0A=
+<!--[if (mso 12)|(mso 14)|(mso 15)]>=0A=
+<style>=0A=
+#innerTable {=0A=
+	width: 600px;=0A=
+}=0A=
+</style>=0A=
+<![endif]-->=0A=
+	=0A=
+	<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"bgtc" ali=
+gn=3D"center" style=3D"border-collapse: collapse; line-height: 100% !import=
+ant; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; w=
+idth: 100% !important">=0A=
+		<tbody><tr>=0A=
+			<td style=3D"border-collapse: collapse;">=0A=
+				<table style=3D"border-collapse: collapse; margin: auto; max-width: 700=
+px; min-width: 320px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; backgro=
+und: #f5f5f5; width: 100%;">=0A=
+					<tbody><tr>=0A=
+						<td valign=3D"top" class=3D"main_wrapper" style=3D"padding: 0px 20px;=
+ border-collapse: collapse;">=0A=
+							<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"com=
+ment_wrapper_table admin_comment" align=3D"center" style=3D"-webkit-backgro=
+und-clip: padding-box; background-clip: padding-box; border-collapse: colla=
+pse; color: #545454; font-family: 'Helvetica Neue',Arial,sans-serif; font-s=
+ize: 13px; line-height: 20px; margin: 0 auto; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; width: 100%">=0A=
+								<tbody><tr>=0A=
+									<td valign=3D"top" class=3D"comment_wrapper_td" style=3D"border-co=
+llapse: collapse;">=0A=
+										<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"=
+comment_body" style=3D"-webkit-background-clip: padding-box; background-cli=
+p: padding-box; border-collapse: separate; mso-table-lspace: 0pt; mso-table=
+-rspace: 0pt; width: 100%; background: #fff; -webkit-border-radius: 3px; -m=
+oz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; borde=
+r-radius: 3px; margin-top: 20px; padding-bottom: 20px;">=0A=
+											<tbody><tr>=0A=
+												<td class=3D"comment_body_td" style=3D"-webkit-background-clip:=
+ padding-box; background-clip: padding-box; color: rgb(84, 84, 84); font-fa=
+mily: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; line-height: 20=
+px; overflow: hidden; padding: 15px 20px; border-collapse: collapse;" colsp=
+an=3D"2">=0A=
+													<p style=3D"margin: 10px 0; font-size: 20px; text-align:center=
+">=0A=
+														Chat on piezohannas.com=0A=
+													</p>=0A=
+													<div style=3D"width: 100%; height: 1px; background : #e4e4e4; =
+margin: 20px 0"></div>=0A=
+													<p style=3D"margin: 5px 0; text-align: center;">=0A=
+														Conversation started on : Wednesday, May 27, 2020, at 09:11 (=
+GMT&#43;0)=0A=
+													</p>=0A=
+												</td>=0A=
+											</tr>=0A=
+												<tr>=0A=
+													<td style=3D"padding: 5px 5px 5px 20px; width: 60px; text-alig=
+n: right; vertical-align: top; border-collapse: collapse;">=0A=
+														[09:13]=0A=
+													</td>=0A=
+													<td style=3D"overflow: hidden; padding: 5px 20px 5px 5px; bord=
+er-collapse: collapse;">=0A=
+															GIES Valentin: Name : GIES Valentin=0A=
+<br>Email : vgies@hotmail.com=0A=
+<br>Question : We have a question about your piezo hemisphere frequency res=
+ponse=0A=
+													</td>=0A=
+												</tr>=0A=
+										</tbody></table>=0A=
+									</td>=0A=
+								</tr>=0A=
+							</tbody></table>=0A=
+							<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" class=3D"mes=
+sage_footer_table" align=3D"center" style=3D"border-collapse: collapse; col=
+or: #545454; font-family: 'Helvetica Neue',Arial,sans-serif; font-size: 13p=
+x; line-height: 20px; margin: 0 auto; max-width: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt; width: 100%">=0A=
+								<tbody><tr>=0A=
+									<td style=3D"padding: 20px; color: rgb(139, 139, 139); text-align:=
+ center; border-collapse: collapse;">=0A=
+											No <a href=3D"https://tawk.to" target=3D"_blank" style=3D"color:=
+ #ec008c;text-decoration: underline;">tawk.to</a> live chat account ?&nbsp;=
+=0A=
+											Create one for free  <a href=3D"https://tawk.to/?utm_source=3Dch=
+attranscript&amp;utm_medium=3Dlink&amp;utm_campaign=3Dsignup" style=3D"colo=
+r: #333333;text-decoration: underline;">here</a>!=0A=
+									</td>=0A=
+								</tr>=0A=
+							</tbody></table>=0A=
+						</td>=0A=
+					</tr>=0A=
+				</tbody></table>=0A=
+			</td>=0A=
+		</tr>=0A=
+	</tbody></table>=0A=
+</div></div></blockquote>=0A=
+</body></html>=
+
+------=_001_NextPart437502163355_=------

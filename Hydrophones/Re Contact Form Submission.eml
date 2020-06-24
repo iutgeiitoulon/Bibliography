@@ -1,0 +1,364 @@
+Received: from DB8EUR05HT204.eop-eur05.prod.protection.outlook.com
+ (2603:10a6:802:1::20) by VI1PR06MB6543.eurprd06.prod.outlook.com with HTTPS
+ via VI1PR0902CA0031.EURPRD09.PROD.OUTLOOK.COM; Wed, 27 May 2020 14:47:37
+ +0000
+Received: from DB8EUR05FT052.eop-eur05.prod.protection.outlook.com
+ (2a01:111:e400:fc0f::45) by
+ DB8EUR05HT204.eop-eur05.prod.protection.outlook.com (2a01:111:e400:fc0f::475)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3045.17; Wed, 27 May
+ 2020 14:47:36 +0000
+Authentication-Results: spf=none (sender IP is 209.85.222.173)
+ smtp.mailfrom=americanpiezo.com; hotmail.com; dkim=pass (signature was
+ verified) header.d=americanpiezo-com.20150623.gappssmtp.com;hotmail.com;
+ dmarc=none action=none header.from=americanpiezo.com;
+Received-SPF: None (protection.outlook.com: americanpiezo.com does not
+ designate permitted sender hosts)
+Received: from mail-qk1-f173.google.com (209.85.222.173) by
+ DB8EUR05FT052.mail.protection.outlook.com (10.233.238.222) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.3045.17 via Frontend Transport; Wed, 27 May 2020 14:47:36 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:E538E5002C9C0C9278E709EB167EE291A7E50102523C8CAD12D676C625BA3326;UpperCasedChecksum:D0E662893A62363AFE0D00B8AAF6AB9E32156CAAA2B2D7ACEAB44DFD22F7C630;SizeAsReceived:2907;Count:18
+Received: by mail-qk1-f173.google.com with SMTP id z80so24590051qka.0
+        for <vgies@hotmail.com>; Wed, 27 May 2020 07:47:36 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=americanpiezo-com.20150623.gappssmtp.com; s=20150623;
+        h=from:mime-version:subject:date:references:to:in-reply-to:message-id;
+        bh=rlSD+6El3AsFo9WqPRiisdglzOItXwZ4Khj/2oPtv8s=;
+        b=FoOn++hHKrWOi7kwKSNbp3wrCEXaiSOabpt5H/Ok+dcNMBqfzHQ3R2pTeBJOk2FNMP
+         qlJDSK/+yC9DPMz5ABKUH7U8Ramnuiep1Hi75S7GbJESKx9l4cnaFi0fAvn2yXunN5qe
+         +lSFwjG7rFd3MlTXZzrYBL8Vr55T9OxbpGXAPqI6xDPyMYSoHgDGwCJoezdfurIBcnxu
+         0RpZpJ2RbNeWIKWgxdofCvBr5hdrf6DbrVFY7dOF6V/IAgxVWfYaZvxT1uu4ufi5J6Wh
+         vT+H3Ygfy5Uz8AY3HoinHZ6iD0XjxpKzpb0n4jF7tuHoskvXih8B1X3dE+LNGTrXtrot
+         lUtQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:mime-version:subject:date:references:to
+         :in-reply-to:message-id;
+        bh=rlSD+6El3AsFo9WqPRiisdglzOItXwZ4Khj/2oPtv8s=;
+        b=hSuIBTBwUKlJVx1Ad991IH+ganzDoJFuZaPrCHw46cVLZLRToRCwp3sWdMpw+4330N
+         L7oeDtpYG2iBeu1ojF3fh5T3ldFrQPUBFzuQBoukEl9s1X/lBzGPr0DZto7BqejE53en
+         FZG6dTPEa45xynv/FDzE3LBIk8Uhq2UPuS4eETtD1lqZ1P6dD5TdIxzk1dnr0CE8lsyx
+         in0sjKehlyPRmhgCdp0cfBHq3EI+cdHkSvmmIcRVPsb8fM6QesszmYKUAWnBkVcN6mfN
+         DSnDkxlCQ+8XGXp9sz7OrtrLa0sOtOqFu89PLMo94AXl7PTVm7/VmbvMbt/jyll4fH9Y
+         6/MA==
+X-Gm-Message-State: AOAM533+rbZr3/XDBNODFB+dt5sCGBvgc78U+8iEhahdxPuzVHyP1EHw
+	QHxQY5qugcTtfrzAMO6PW7p26buo8jk=
+X-Google-Smtp-Source: ABdhPJza5WVZpcYMFwW3UZ6moLCs7y8pT+qLCtCiZWoFfapJaVQK8a275PaoXZ6VtjI3bboptWHItw==
+X-Received: by 2002:a37:a74a:: with SMTP id q71mr4555398qke.446.1590590855947;
+        Wed, 27 May 2020 07:47:35 -0700 (PDT)
+Return-Path: tcable@americanpiezo.com
+Received: from todds-mbp.apci.local (173-163-34-173-cpennsylvania.hfc.comcastbusiness.net. [173.163.34.173])
+        by smtp.gmail.com with ESMTPSA id c63sm2301502qkf.131.2020.05.27.07.47.35
+        for <vgies@hotmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 27 May 2020 07:47:35 -0700 (PDT)
+From: Todd Cable <tcable@americanpiezo.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_2283F1CC-1885-4636-8B35-93E32DAB2545"
+Subject: Re: Contact Form Submission
+Date: Wed, 27 May 2020 10:47:34 -0400
+References: <009e01d6341e$d7ecec60$87c6c520$@americanpiezo.com>
+ <35AB3EAF-823E-43AB-9D8E-253140528D34@americanpiezo.com>
+ <CA+p9-+0XO48rsAZdk7s8+7Kh3y4U_DwDZcp9ztE8XVXJUw8esQ@mail.gmail.com>
+To: vgies@hotmail.com
+In-Reply-To: <CA+p9-+0XO48rsAZdk7s8+7Kh3y4U_DwDZcp9ztE8XVXJUw8esQ@mail.gmail.com>
+Message-Id: <52F654D8-DDCF-4B25-8B41-80681E775A7D@americanpiezo.com>
+X-Mailer: Apple Mail (2.3445.9.5)
+X-IncomingHeaderCount: 18
+X-MS-Exchange-Organization-ExpirationStartTime: 27 May 2020 14:47:36.6262
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ e9807f11-9f62-49bf-8232-08d8024ce5a1
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report:
+ CIP:209.85.222.173;CTRY:US;LANG:en;SCL:0;SRV:;IPV:NLI;SFV:NSPM;H:mail-qk1-f173.google.com;PTR:mail-qk1-f173.google.com;CAT:NONE;SFTY:;SFS:;DIR:INB;SFP:;
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ DB8EUR05FT052.eop-eur05.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 5/27/2020 2:47:17 PM
+X-MS-Office365-Filtering-Correlation-Id: e9807f11-9f62-49bf-8232-08d8024ce5a1
+X-MS-TrafficTypeDiagnostic: DB8EUR05HT204:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 209.85.222.173
+X-SID-PRA: TCABLE@AMERICANPIEZO.COM
+X-SID-Result: NONE
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 0
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 May 2020 14:47:36.6062
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e9807f11-9f62-49bf-8232-08d8024ce5a1
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB8EUR05HT204
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.6733595
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.3045.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;psp:0;auth:0;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000282)(90000001)(90005001)(90027001)(9000001)(9010001)(5061607266)(5061608174)(4900115)(8402075)(4920090)(6394001)(4950130)(4990090)(9140004);RF:JunkEmail;
+X-Message-Info:
+	qoGN4b5S4yq407B1ogTEr651J+ODe863whVcVPNoEX5GrldfOPtts+O7+Ksz/9ZTlns5f/Oo5WePgHAkdTlR83opDra24XfdnqexMbjPvcFyph16Kh3XVdntHVuSFA+0hlYuunU/AgtjR/8tk7lG5kbt3VFFouaPYo4XyURBm0xccGnZHMYOhzNQGr7O5q1b1Nwpwnlp9Qo0ZMK8+UfNnw==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?b/Jl5wthGxUhxKmTZ5fEDInF+xAJrqmGczdUdUlYmBxQah5cNN4FTVfBhuTc?=
+ =?us-ascii?Q?7vLTsXJpsUI4uwm9jxzMJ4PTBQGGUpTARiCHUQBOdlIkHc5fVhbcUmkuoNGL?=
+ =?us-ascii?Q?Zo5UxAOzN7WSV2eS3NHCzh/YWSnMhlkEAILM6LP+EZFptl2aTxmjnrM2DfoO?=
+ =?us-ascii?Q?sCr116p9pUxqVhSlgGMUU9pYmlaA/l+B5ek21k+MP2KrbXYIuI/JOmSLySsE?=
+ =?us-ascii?Q?trCEmh9Y0ijE4NVeiPIXpsTlySTvD+nGWhD+b95l0OcddJx3hk+nVEIlJnBU?=
+ =?us-ascii?Q?KFxRlhwB5aORYdk+/UCfh7JPTVmlS8ts8kJK6cbe/VEX2jzaW8+Eg4YW0Q8o?=
+ =?us-ascii?Q?+4KFVRqMNGaMMy78VJLB3O2X5vHE8qUYGMb6PuS6FcraNHaRjE+6Ybo657y1?=
+ =?us-ascii?Q?dCE/fvzgw1856JtNRy6y8lXYnHSwE10QjXGp6z5pQNHlYKHrA6k/hAeECh93?=
+ =?us-ascii?Q?eJuqJQaamhcRr5H1ZwQg53dLQ3EZ7VVmCmPirMfC/z2ghdstNcBJoOWn5kKv?=
+ =?us-ascii?Q?hYZvzS16p+AATIDOcOae+StzUqxCc3KT0ZXzhqSvnHLI4Cglz4Yhjyhy3srZ?=
+ =?us-ascii?Q?7ymuwwDe0T17ekHwoZpOQuS3Aty3Kq6B4nIq6sORw6Q8xLmo8Ez9OFYzjmKV?=
+ =?us-ascii?Q?EgIBjomklX7V615ESJT2mMWgvH1zfep/oYduYhlrQwt9+3FBK2zSLpE7TZE8?=
+ =?us-ascii?Q?wPmOyjFE7LKplGghqAX9lB6eHgHSk8NXg2105B+usimBtArdAzhieE7OsjJH?=
+ =?us-ascii?Q?UPFC4lCZWdocm0xKMdrSOVn1hmCx7GIIq6XSHeVMT6v3tiT1aj46q7KE0+xv?=
+ =?us-ascii?Q?aMAdJtTt0gb65R/tIpeiXGynBw9VefwyziYHB1Ub4FrQ0+JfwNc2FPIyB47a?=
+ =?us-ascii?Q?a2Gx1u5xpEGfK+zYVHViGQukzAQhbBOnjfDmRACHCQr+v+NHxYvMqq4EcaJE?=
+ =?us-ascii?Q?SK1Df2Q9fAXX+ig+go38M46wEmm538+AM0ROwJu7Ac7IinAf0qE98FZb9E3E?=
+ =?us-ascii?Q?R7siSIQ2bAJo/3hBwKiKlzuj8makNusS0AjI2p3nbQKBGtnl0kprkChtMN5o?=
+ =?us-ascii?Q?wRrSTX9VHTFHfojxOFHlouhQpsvGJDi2fL/ywc66b4gslwkGIFBskUWpKBeK?=
+ =?us-ascii?Q?8qjR/Tar+gru?=
+MIME-Version: 1.0
+X-EsetId: 37303A29623D7E69607D67
+
+--Apple-Mail=_2283F1CC-1885-4636-8B35-93E32DAB2545
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=us-ascii
+
+Hi,
+
+Please see the response from the engineer:
+
+APC does not design hydrophone's, so that is something you will need to =
+do. The usable or somewhat flat fq range is usually well below the first =
+resonant fq of the piezo. You are probably looking at an OD size of 10mm =
+or less for lower Fq Range. and an OD size of 6mm or less for the higher =
+Fq Range. Typical Material is APC 850.
+
+You are probably looking at a cost of $500 to $1000 each for an =
+assembled piezo sphere with Leads or Cable and we cannot guarantee the =
+performance.
+
+You may consider using Cylinders and see how they work. A link to our =
+stand cylinder webpage is listed below
+https://www.americanpiezo.com/standard-products/piezo-tubes.html =
+<https://www.americanpiezo.com/standard-products/piezo-tubes.html>
+You would likely be looking at the Type II Material and the smaller =
+sizes.
+
+Let us know if you see anything you are interested in.
+
+Thank you.
+
+Regards,
+
+Todd Cable
+Products Line Manager=20
+APC International, Ltd.
+213 Duck Run, PO Box 180
+Mackeyville, Pa. 17750-0180 USA
+Tel.: +1-570-726-6961 ext 207
+Fax: +1-570-726-7466 =20
+E-mail: TCable@americanpiezo.com. URL: www.americanpiezo.com
+
+
+
+-----Original Message-----
+From: American Piezo <contactrequest@americanpiezo.com =
+<mailto:contactrequest@americanpiezo.com>>=20
+Sent: Wednesday, May 27, 2020 6:05 AM
+To: sales@americanpiezo.com <mailto:sales@americanpiezo.com>
+Subject: Contact Form Submission
+
+
+Contact Request:
+
+GIES Valentin
+Toulon University
+vgies@hotmail.com <mailto:vgies@hotmail.com>
++33 628 35 76 85
+Purchased Before: No
+Questions/Comments: Dear technical support, We are interested in your =
+piezoelectric spheres, but we have a few questions about bandwidth and =
+sensitivity. We want to build an hydrophone having a large frequency =
+response starting at 1Hz , and up to 100kHz in a standard version, and =
+250kHz in an extended version, with a bandpass ripple of less than 10dB.=20=
+
+Which product do you recommend for these applications, and what is the =
+price ? Could you send us the corresponding datasheet ?
+Alos, what charge amplifier circuit do you recommend for use with your =
+sensors ?
+Best regards,
+Valentin Gies
+Toulon University, France
+vgies@univ-tln.fr <mailto:vgies@univ-tln.fr>
++33 6 28 35 76 85
+
+
+
+
+IP: 193.49.96.14=20
+
+
+
+
+--Apple-Mail=_2283F1CC-1885-4636-8B35-93E32DAB2545
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=us-ascii
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+></head><body style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; lin=
+e-break: after-white-space;" class=3D"">Hi,<div class=3D""><br class=3D""><=
+/div><div class=3D"">Please see the response from the engineer:</div><div c=
+lass=3D""><br class=3D""></div><div class=3D""><div class=3D"">APC does not=
+ design&nbsp;hydrophone's, so that is something you will need to do. The us=
+able&nbsp;or somewhat flat fq range is usually well below the first resonan=
+t&nbsp;fq of the piezo. You are probably looking at an OD size of 10mm or l=
+ess for lower Fq Range. and an OD size of 6mm or less for the higher Fq Ran=
+ge. Typical Material is APC 850.</div><div class=3D""><br class=3D""></div>=
+<div class=3D"">You are probably looking at a cost of $500 to $1000 each fo=
+r an assembled piezo sphere with Leads or Cable and we cannot guarantee&nbs=
+p;the performance.</div><div class=3D""><br class=3D""></div><div class=3D"=
+">You may consider using Cylinders and see how they work. A link to our sta=
+nd cylinder webpage is listed below</div><div class=3D""><a href=3D"https:/=
+/www.americanpiezo.com/standard-products/piezo-tubes.html" class=3D"">https=
+://www.americanpiezo.com/standard-products/piezo-tubes.html</a></div><div c=
+lass=3D"">You would likely be looking at the Type II Material and the small=
+er sizes.</div><div class=3D""><br class=3D""></div><div class=3D"">Let us =
+know if you see anything you are&nbsp;interested in.</div><div class=3D""><=
+br class=3D""></div><div class=3D"">Thank you.</div><div class=3D""><br cla=
+ss=3D""></div><div class=3D""><div style=3D"color: rgb(0, 0, 0); letter-spa=
+cing: normal; orphans: auto; text-align: start; text-indent: 0px; text-tran=
+sform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-=
+text-stroke-width: 0px; word-wrap: break-word; -webkit-nbsp-mode: space; -w=
+ebkit-line-break: after-white-space;" class=3D""><div style=3D"color: rgb(0=
+, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; let=
+ter-spacing: normal; line-height: normal; orphans: auto; text-align: start;=
+ text-indent: 0px; text-transform: none; white-space: normal; widows: auto;=
+ word-spacing: 0px; -webkit-text-stroke-width: 0px; word-wrap: break-word; =
+-webkit-nbsp-mode: space; -webkit-line-break: after-white-space;" class=3D"=
+"><div style=3D"color: rgb(0, 0, 0); font-style: normal; font-variant: norm=
+al; font-weight: normal; letter-spacing: normal; line-height: normal; orpha=
+ns: auto; text-align: start; text-indent: 0px; text-transform: none; white-=
+space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: =
+0px;" class=3D"">Regards,</div><div style=3D"color: rgb(0, 0, 0); font-styl=
+e: normal; font-variant: normal; font-weight: normal; letter-spacing: norma=
+l; line-height: normal; orphans: auto; text-align: start; text-indent: 0px;=
+ text-transform: none; white-space: normal; widows: auto; word-spacing: 0px=
+; -webkit-text-stroke-width: 0px;" class=3D""><br class=3D""></div><div sty=
+le=3D"color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-w=
+eight: normal; letter-spacing: normal; line-height: normal; orphans: auto; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: nor=
+mal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;" clas=
+s=3D"">Todd Cable</div><span style=3D"color: rgb(0, 0, 0); font-style: norm=
+al; font-variant: normal; font-weight: normal; letter-spacing: normal; line=
+-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-t=
+ransform: none; white-space: normal; widows: auto; word-spacing: 0px; -webk=
+it-text-stroke-width: 0px; float: none; display: inline !important;" class=
+=3D"">Products Line Manager&nbsp;</span><br style=3D"color: rgb(0, 0, 0); f=
+ont-style: normal; font-variant: normal; font-weight: normal; letter-spacin=
+g: normal; line-height: normal; orphans: auto; text-align: start; text-inde=
+nt: 0px; text-transform: none; white-space: normal; widows: auto; word-spac=
+ing: 0px; -webkit-text-stroke-width: 0px;" class=3D""><span style=3D"color:=
+ rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: norma=
+l; letter-spacing: normal; line-height: normal; orphans: auto; text-align: =
+start; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; disp=
+lay: inline !important;" class=3D"">APC International, Ltd.</span><br style=
+=3D"color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-wei=
+ght: normal; letter-spacing: normal; line-height: normal; orphans: auto; te=
+xt-align: start; text-indent: 0px; text-transform: none; white-space: norma=
+l; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;" class=
+=3D""><span style=3D"color: rgb(0, 0, 0); font-style: normal; font-variant:=
+ normal; font-weight: normal; letter-spacing: normal; line-height: normal; =
+orphans: auto; text-align: start; text-indent: 0px; text-transform: none; w=
+hite-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-wi=
+dth: 0px; float: none; display: inline !important;" class=3D"">213 Duck Run=
+, PO Box 180</span><br style=3D"color: rgb(0, 0, 0); font-style: normal; fo=
+nt-variant: normal; font-weight: normal; letter-spacing: normal; line-heigh=
+t: normal; orphans: auto; text-align: start; text-indent: 0px; text-transfo=
+rm: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-tex=
+t-stroke-width: 0px;" class=3D""><span style=3D"color: rgb(0, 0, 0); font-s=
+tyle: normal; font-variant: normal; font-weight: normal; letter-spacing: no=
+rmal; line-height: normal; orphans: auto; text-align: start; text-indent: 0=
+px; text-transform: none; white-space: normal; widows: auto; word-spacing: =
+0px; -webkit-text-stroke-width: 0px; float: none; display: inline !importan=
+t;" class=3D"">Mackeyville, Pa. 17750-0180 USA</span><br style=3D"color: rg=
+b(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; =
+letter-spacing: normal; line-height: normal; orphans: auto; text-align: sta=
+rt; text-indent: 0px; text-transform: none; white-space: normal; widows: au=
+to; word-spacing: 0px; -webkit-text-stroke-width: 0px;" class=3D""><span st=
+yle=3D"color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-=
+weight: normal; letter-spacing: normal; line-height: normal; orphans: auto;=
+ text-align: start; text-indent: 0px; text-transform: none; white-space: no=
+rmal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; floa=
+t: none; display: inline !important;" class=3D"">Tel.: &#43;1-570-726-6961 =
+ext 207</span></div><div style=3D"color: rgb(0, 0, 0); font-style: normal; =
+font-variant: normal; font-weight: normal; letter-spacing: normal; line-hei=
+ght: normal; orphans: auto; text-align: start; text-indent: 0px; text-trans=
+form: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-t=
+ext-stroke-width: 0px; word-wrap: break-word; -webkit-nbsp-mode: space; -we=
+bkit-line-break: after-white-space;" class=3D""><span style=3D"color: rgb(0=
+, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; let=
+ter-spacing: normal; line-height: normal; orphans: auto; text-align: start;=
+ text-indent: 0px; text-transform: none; white-space: normal; widows: auto;=
+ word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; display: i=
+nline !important;" class=3D"">Fax: &#43;1-570-726-7466 &nbsp;</span><br sty=
+le=3D"color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-w=
+eight: normal; letter-spacing: normal; line-height: normal; orphans: auto; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: nor=
+mal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;" clas=
+s=3D""><span style=3D"color: rgb(0, 0, 0); font-style: normal; font-variant=
+: normal; font-weight: normal; letter-spacing: normal; line-height: normal;=
+ orphans: auto; text-align: start; text-indent: 0px; text-transform: none; =
+white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-w=
+idth: 0px; float: none; display: inline !important;" class=3D""><a href=3D"=
+mailto:TCable@americanpiezo.com" class=3D"">E-mail:&nbsp;TCable@americanpie=
+zo.com</a>.&nbsp;URL:&nbsp;<a href=3D"http://www.americanpiezo.com" class=
+=3D"">www.americanpiezo.com</a></span></div></div>
+</div>
+<div><br class=3D""><div class=3D""><br class=3D""></div><div class=3D""><d=
+iv dir=3D"ltr" class=3D""><div class=3D""><div class=3D"gmail_quote"><div s=
+tyle=3D"word-wrap:break-word;line-break:after-white-space" class=3D""><div =
+class=3D""><div class=3D""><div class=3D""><br class=3D"">-----Original Mes=
+sage-----<br class=3D"">From: American Piezo &lt;<a href=3D"mailto:contactr=
+equest@americanpiezo.com" target=3D"_blank" class=3D"">contactrequest@ameri=
+canpiezo.com</a>&gt; <br class=3D"">Sent: Wednesday, May 27, 2020 6:05 AM<b=
+r class=3D"">To: <a href=3D"mailto:sales@americanpiezo.com" target=3D"_blan=
+k" class=3D"">sales@americanpiezo.com</a><br class=3D"">Subject: Contact Fo=
+rm Submission<br class=3D""><br class=3D""><br class=3D"">Contact Request:<=
+br class=3D""><br class=3D"">GIES Valentin<br class=3D"">Toulon University<=
+br class=3D""><a href=3D"mailto:vgies@hotmail.com" target=3D"_blank" class=
+=3D"">vgies@hotmail.com</a><br class=3D"">&#43;33 628 35 76 85<br class=3D"=
+">Purchased Before: No<br class=3D"">Questions/Comments: Dear technical sup=
+port, We are interested in your piezoelectric spheres, but we have a few qu=
+estions about bandwidth and sensitivity. We want to build an hydrophone hav=
+ing a large frequency response starting at 1Hz , and up to 100kHz in a stan=
+dard version, and 250kHz in an extended version, with a bandpass ripple of =
+less than 10dB. <br class=3D"">Which product do you recommend for these app=
+lications, and what is the price ? Could you send us the corresponding data=
+sheet ?<br class=3D"">Alos, what charge amplifier circuit do you recommend =
+for use with your sensors ?<br class=3D"">Best regards,<br class=3D"">Valen=
+tin Gies<br class=3D"">Toulon University, France<br class=3D""><a href=3D"m=
+ailto:vgies@univ-tln.fr" target=3D"_blank" class=3D"">vgies@univ-tln.fr</a>=
+<br class=3D"">&#43;33 6 28 35 76 85<br class=3D""><br class=3D""><br class=
+=3D""><br class=3D""><br class=3D"">IP: 193.49.96.14 <br class=3D""><br cla=
+ss=3D""></div></div></div><br class=3D""></div></div></div></div>
+</div></div><br class=3D""></div></body></html>=
+
+--Apple-Mail=_2283F1CC-1885-4636-8B35-93E32DAB2545--
