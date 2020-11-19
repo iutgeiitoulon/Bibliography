@@ -1,0 +1,1565 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet href='./slwebview.css' type='text/css' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' zoomAndPan='disable' onload='initialize(evt)'>
+  <script type='text/javascript' xlink:href='./slwebview.js' />
+  <script type='text/javascript' xlink:href='./id_mapping.js' />
+  <rect id='keyEventBackingScrim' pointer-events='all' x='0' y='0' width='100%' height='100%' fill='none' stroke='none' />
+  <g id='group.canvas' transform='translate(0,30)'>
+    <!-- Layers will be added here -->
+
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' onload='initialize(evt)' zoomAndPan='disable' id='canvas.motion_turtle' class='canvas' display='none' x='0' y='0' height='95%' width='100%' preserveAspectRatio='xMinYMin meet' original_viewBox='50 59 860 546' viewBox='50 59 860 546'> 
+
+
+  <title id='title.motion_turtle'>motion_turtle</title>
+<rect id='background.motion_turtle' x='-4041' y='-4032' width='8987' height='8664' pointer-events='none' fill='rgb(100%,100%,100%) ' />
+<g><rect x='65' y='137' width='162' height='78' stroke='none' fill='rgb(100%,100%,100%)' />
+<g><text stroke='none' x='67.5' y='147' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>This scheme has to be used with </text>
+</g>
+<g><text stroke='none' x='68.5' y='160' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>the scheme find_ball from vision</text>
+</g>
+<g><text stroke='none' x='73' y='173' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>which delivers the coordinates </text>
+</g>
+<g><text stroke='none' x='66.5' y='186' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>(i.e. radius and angle to the ball) </text>
+</g>
+<g><text stroke='none' x='66.5' y='199' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>of the ball such that the robot will</text>
+</g>
+<g><text stroke='none' x='83.5' y='212' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>go to the ball face forward</text>
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Step' class='proptable' pointer-events='none' extent_Height='76' extent_Width='98' preferred_X='360' preferred_Y='85'>
+  <rect x='0' y='0' width='98' height='76' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Time</text>
+  <text stroke='none' x='80' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0.5</text>
+  <rect x='0' y='19' width='98' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Before</text>
+  <text stroke='none' x='80' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>After</text>
+  <text stroke='none' x='80' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>1</text>
+  <rect x='0' y='41' width='98' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>SampleTime</text>
+  <text stroke='none' x='80' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Ts</text>
+  <text stroke='none' x='5' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>VectorParams1D</text>
+  <text stroke='none' x='80' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>on</text>
+  <rect x='0' y='63' width='98' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>ZeroCross</text>
+  <text stroke='none' x='80' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>on</text>
+  <rect x='0' y='0' width='98' height='76' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Step' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Step'>Step</title>
+<g><rect x='325' y='80' width='30' height='30' stroke='none' fill='rgb(100%,100%,100%)' />
+</g>
+<g><line x1='325' y1='107' x2='340' y2='107' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_0)' />
+<line x1='340' y1='107' x2='340' y2='82' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_0)' />
+<line x1='340' y1='82' x2='354' y2='82' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_0)' />
+</g>
+<g><rect x='325' y='80' width='30' height='30' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Set CPU affinity' class='proptable' pointer-events='none' extent_Height='21' extent_Width='62' preferred_X='161' preferred_Y='363'>
+  <rect x='0' y='0' width='62' height='21' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>cpu_id</text>
+  <text stroke='none' x='37' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>cpu0</text>
+  <rect x='0' y='0' width='62' height='21' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Set CPU affinity' linkid='motion_turtle/Set CPU affinity' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Set CPU affinity'>Set CPU affinity</title>
+<g><rect x='56' y='358' width='100' height='65' stroke='none' fill='rgb(50.1961%,50.1961%,50.1961%)' />
+<g><text stroke='none' x='68.5' y='435' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Set CPU affinity</text>
+</g>
+</g>
+<g><ellipse cx='115.5' cy='390.5' rx='13.5' ry='6.5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' clip-path='url(#clip_rect_1)' />
+<line x1='56' y1='403' x2='116' y2='403' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_1)' />
+<line x1='116' y1='403' x2='116' y2='397' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_1)' />
+<line x1='155' y1='390' x2='129' y2='390' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_1)' />
+<line x1='116' y1='384' x2='116' y2='377' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_1)' />
+<line x1='116' y1='377' x2='102' y2='377' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_1)' />
+<line x1='102' y1='377' x2='79' y2='371' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_1)' />
+<line x1='79' y1='371' x2='79' y2='384' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_1)' />
+<line x1='79' y1='384' x2='102' y2='377' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_1)' />
+<line x1='56' y1='377' x2='79' y2='377' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_1)' />
+</g>
+<g><rect x='56' y='358' width='100' height='65' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Selector2' class='proptable' pointer-events='none' extent_Height='109' extent_Width='194' preferred_X='255' preferred_Y='302'>
+  <rect x='0' y='0' width='194' height='109' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>NumberOfDimensions</text>
+  <text stroke='none' x='103' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>1</text>
+  <rect x='0' y='19' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexMode</text>
+  <text stroke='none' x='103' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>One-based</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexOptionArray</text>
+  <text stroke='none' x='103' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&lt;1x1 cell></text>
+  <rect x='0' y='41' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexParamArray</text>
+  <text stroke='none' x='103' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&lt;1x1 cell></text>
+  <text stroke='none' x='5' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>OutputSizeArray</text>
+  <text stroke='none' x='103' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&lt;1x1 cell></text>
+  <rect x='0' y='63' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>InputPortWidth</text>
+  <text stroke='none' x='103' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>100</text>
+  <text stroke='none' x='5' y='82' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>SampleTime</text>
+  <text stroke='none' x='103' y='82' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>-1</text>
+  <rect x='0' y='85' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='93' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexOptions</text>
+  <text stroke='none' x='103' y='93' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Index vector (dialog)</text>
+  <text stroke='none' x='5' y='104' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Indices</text>
+  <text stroke='none' x='103' y='104' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>[KTuneparams]</text>
+  <rect x='0' y='0' width='194' height='109' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Selector2' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Selector2'>Selector2</title>
+<g><rect x='210' y='297' width='40' height='16' stroke='none' fill='rgb(0%,0%,80%)' />
+<rect x='210' y='297' width='40' height='16' stroke='none' fill='rgb(0%,0%,80%)' />
+<rect x='210' y='297' width='40' height='16' stroke='none' fill='rgb(0%,0%,80%)' />
+</g>
+<g><g><text stroke='none' x='213' y='309.5' font-size='10' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_2)' font-family='Helvetica'>U</text>
+</g>
+<g><text stroke='none' x='240' y='309.5' font-size='10' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_2)' font-family='Helvetica'>Y</text>
+</g>
+</g>
+<g><rect x='210' y='297' width='40' height='16' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Selector1' class='proptable' pointer-events='none' extent_Height='109' extent_Width='194' preferred_X='255' preferred_Y='277'>
+  <rect x='0' y='0' width='194' height='109' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>NumberOfDimensions</text>
+  <text stroke='none' x='103' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>1</text>
+  <rect x='0' y='19' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexMode</text>
+  <text stroke='none' x='103' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>One-based</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexOptionArray</text>
+  <text stroke='none' x='103' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&lt;1x1 cell></text>
+  <rect x='0' y='41' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexParamArray</text>
+  <text stroke='none' x='103' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&lt;1x1 cell></text>
+  <text stroke='none' x='5' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>OutputSizeArray</text>
+  <text stroke='none' x='103' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&lt;1x1 cell></text>
+  <rect x='0' y='63' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>InputPortWidth</text>
+  <text stroke='none' x='103' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>100</text>
+  <text stroke='none' x='5' y='82' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>SampleTime</text>
+  <text stroke='none' x='103' y='82' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>-1</text>
+  <rect x='0' y='85' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='93' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexOptions</text>
+  <text stroke='none' x='103' y='93' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Index vector (dialog)</text>
+  <text stroke='none' x='5' y='104' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Indices</text>
+  <text stroke='none' x='103' y='104' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>BHTuneparams</text>
+  <rect x='0' y='0' width='194' height='109' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Selector1' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Selector1'>Selector1</title>
+<g><rect x='210' y='272' width='40' height='16' stroke='none' fill='rgb(0%,0%,80%)' />
+<rect x='210' y='272' width='40' height='16' stroke='none' fill='rgb(0%,0%,80%)' />
+<rect x='210' y='272' width='40' height='16' stroke='none' fill='rgb(0%,0%,80%)' />
+</g>
+<g><g><text stroke='none' x='213' y='284.5' font-size='10' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_3)' font-family='Helvetica'>U</text>
+</g>
+<g><text stroke='none' x='240' y='284.5' font-size='10' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_3)' font-family='Helvetica'>Y</text>
+</g>
+</g>
+<g><rect x='210' y='272' width='40' height='16' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Selector' class='proptable' pointer-events='none' extent_Height='109' extent_Width='194' preferred_X='255' preferred_Y='251'>
+  <rect x='0' y='0' width='194' height='109' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>NumberOfDimensions</text>
+  <text stroke='none' x='103' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>1</text>
+  <rect x='0' y='19' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexMode</text>
+  <text stroke='none' x='103' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>One-based</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexOptionArray</text>
+  <text stroke='none' x='103' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&lt;1x1 cell></text>
+  <rect x='0' y='41' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexParamArray</text>
+  <text stroke='none' x='103' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&lt;1x1 cell></text>
+  <text stroke='none' x='5' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>OutputSizeArray</text>
+  <text stroke='none' x='103' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&lt;1x1 cell></text>
+  <rect x='0' y='63' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>InputPortWidth</text>
+  <text stroke='none' x='103' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>100</text>
+  <text stroke='none' x='5' y='82' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>SampleTime</text>
+  <text stroke='none' x='103' y='82' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>-1</text>
+  <rect x='0' y='85' width='194' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='93' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>IndexOptions</text>
+  <text stroke='none' x='103' y='93' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Index vector (dialog)</text>
+  <text stroke='none' x='5' y='104' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Indices</text>
+  <text stroke='none' x='103' y='104' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>SFTuneparams</text>
+  <rect x='0' y='0' width='194' height='109' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Selector' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Selector'>Selector</title>
+<g><rect x='210' y='246' width='40' height='18' stroke='none' fill='rgb(0%,0%,80%)' />
+<rect x='210' y='246' width='40' height='18' stroke='none' fill='rgb(0%,0%,80%)' />
+<rect x='210' y='246' width='40' height='18' stroke='none' fill='rgb(0%,0%,80%)' />
+</g>
+<g><g><text stroke='none' x='213' y='259.5' font-size='10' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_4)' font-family='Helvetica'>U</text>
+</g>
+<g><text stroke='none' x='240' y='259.5' font-size='10' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_4)' font-family='Helvetica'>Y</text>
+</g>
+</g>
+<g><rect x='210' y='246' width='40' height='18' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Reference &amp; Control' class='proptable' pointer-events='none' extent_Height='87' extent_Width='225' preferred_X='530' preferred_Y='126'>
+  <rect x='0' y='0' width='225' height='87' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>ShowPortLabels</text>
+  <text stroke='none' x='163' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>FromPortIcon</text>
+  <rect x='0' y='19' width='225' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Permissions</text>
+  <text stroke='none' x='163' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>ReadWrite</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>PermitHierarchicalResolution</text>
+  <text stroke='none' x='163' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>All</text>
+  <rect x='0' y='41' width='225' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>TreatAsAtomicUnit</text>
+  <text stroke='none' x='163' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MinAlgLoopOccurrences</text>
+  <text stroke='none' x='163' y='60' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <rect x='0' y='63' width='225' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>PropExecContextOutsideSubsystem</text>
+  <text stroke='none' x='163' y='71' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='82' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWSystemCode</text>
+  <text stroke='none' x='163' y='82' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='225' height='87' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Reference &amp; Control' linkid='motion_turtle/Reference &amp; Control' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Reference &amp; Control'>Reference &amp; Control</title>
+<g><rect x='330' y='121' width='195' height='418' stroke='none' fill='rgb(38.0392%,74.1176%,98.8235%)' />
+<g><text stroke='none' x='379.5' y='551' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Reference &amp; Control</text>
+</g>
+</g>
+<g><line x1='420' y1='133' x2='422' y2='133' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_5)' />
+<line x1='422' y1='133' x2='422' y2='125' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_5)' />
+<line x1='422' y1='125' x2='427' y2='125' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_5)' />
+<line x1='427' y1='125' x2='427' y2='133' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_5)' />
+<line x1='427' y1='133' x2='429' y2='133' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_5)' />
+<g><text stroke='none' x='333' y='134' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>pose_g enc_robot</text>
+</g>
+<g><text stroke='none' x='333' y='159' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>tacho left</text>
+</g>
+<g><text stroke='none' x='333' y='184' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>tacho right</text>
+</g>
+<g><text stroke='none' x='333' y='209' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>arm left</text>
+</g>
+<g><text stroke='none' x='333' y='234' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>arm right</text>
+</g>
+<g><text stroke='none' x='333' y='259' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>tunable params smoothifier</text>
+</g>
+<g><text stroke='none' x='333' y='284' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>tunable params_ball</text>
+</g>
+<g><text stroke='none' x='333' y='309' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>tunable params_kick</text>
+</g>
+<g><text stroke='none' x='333' y='334' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>robot active</text>
+</g>
+<g><text stroke='none' x='333' y='359' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>q</text>
+</g>
+<g><text stroke='none' x='333' y='384' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>Retract_ball</text>
+</g>
+<g><text stroke='none' x='333' y='409' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>battery voltage</text>
+</g>
+<g><text stroke='none' x='333' y='434' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>control enable  and amplifiers on</text>
+</g>
+<g><text stroke='none' x='333' y='459' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>SkillIDin</text>
+</g>
+<g><text stroke='none' x='333' y='484' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>panic_switch_trc</text>
+</g>
+<g><text stroke='none' x='333' y='509' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>manual_switch</text>
+</g>
+<g><text stroke='none' x='333' y='534' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>fc_data</text>
+</g>
+<g><text stroke='none' x='451' y='154' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>pose_g robot_ref</text>
+</g>
+<g><text stroke='none' x='491' y='184' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>ball left</text>
+</g>
+<g><text stroke='none' x='487' y='214' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>ball right</text>
+</g>
+<g><text stroke='none' x='492' y='244' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>Skill ID</text>
+</g>
+<g><text stroke='none' x='454' y='274' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>IO Keeper Block</text>
+</g>
+<g><text stroke='none' x='475' y='304' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>emergency</text>
+</g>
+<g><text stroke='none' x='464' y='334' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>control enable</text>
+</g>
+<g><text stroke='none' x='457' y='364' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>demo-team-role</text>
+</g>
+<g><text stroke='none' x='468' y='394' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>Tunable_kick</text>
+</g>
+<g><text stroke='none' x='440' y='424' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>target_xyo cur_xyo</text>
+</g>
+<g><text stroke='none' x='486' y='454' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>turtle_ID</text>
+</g>
+<g><text stroke='none' x='444' y='484' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>penaltyDemoMode</text>
+</g>
+<g><text stroke='none' x='436' y='514' font-size='9' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_5)' font-family='Helvetica'>tunable param move</text>
+</g>
+</g>
+<g><rect x='330.5' y='121.5' width='194' height='417' stroke='rgb(0%,0%,0%)' stroke-width='2' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Mux3' class='proptable' pointer-events='none' extent_Height='32' extent_Width='87' preferred_X='895' preferred_Y='215'>
+  <rect x='0' y='0' width='87' height='32' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Inputs</text>
+  <text stroke='none' x='69' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>2</text>
+  <rect x='0' y='19' width='87' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>DisplayOption</text>
+  <text stroke='none' x='69' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>bar</text>
+  <rect x='0' y='0' width='87' height='32' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Mux3' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Mux3'>Mux3</title>
+<g><rect x='885' y='210' width='5' height='60' stroke='none' fill='rgb(100%,100%,100%)' />
+<rect x='885' y='210' width='5' height='60' stroke='none' fill='rgb(0%,0%,0%)' />
+</g>
+<g></g>
+<g><rect x='885' y='210' width='5' height='60' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Mux2' class='proptable' pointer-events='none' extent_Height='32' extent_Width='87' preferred_X='895' preferred_Y='155'>
+  <rect x='0' y='0' width='87' height='32' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Inputs</text>
+  <text stroke='none' x='69' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>2</text>
+  <rect x='0' y='19' width='87' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>DisplayOption</text>
+  <text stroke='none' x='69' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>bar</text>
+  <rect x='0' y='0' width='87' height='32' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Mux2' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Mux2'>Mux2</title>
+<g><rect x='885' y='150' width='5' height='60' stroke='none' fill='rgb(100%,100%,100%)' />
+<rect x='885' y='150' width='5' height='60' stroke='none' fill='rgb(0%,0%,0%)' />
+</g>
+<g></g>
+<g><rect x='885' y='150' width='5' height='60' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Motion tuning' class='proptable' pointer-events='none' extent_Height='43' extent_Width='253' preferred_X='160' preferred_Y='259'>
+  <rect x='0' y='0' width='253' height='43' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>FunctionName</text>
+  <text stroke='none' x='86' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>sf_tuning_server_motion</text>
+  <rect x='0' y='19' width='253' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Parameters</text>
+  <text stroke='none' x='86' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>char(Names_motion), Defaults_motion</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>SFunctionModules</text>
+  <text stroke='none' x='86' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>&apos;&apos;</text>
+  <rect x='0' y='0' width='253' height='43' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Motion tuning' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Motion tuning'>Motion tuning</title>
+<g><rect x='55' y='254' width='100' height='52' stroke='none' fill='rgb(0%,0%,80%)' />
+<g><text stroke='none' x='72' y='318' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Motion tuning</text>
+</g>
+</g>
+<g><g><text stroke='none' x='47.5' y='284.5' font-size='10' fill='rgb(0%,0%,0%)' clip-path='url(#clip_rect_6)' font-family='Helvetica'>sf_tuning_server_motion</text>
+</g>
+</g>
+<g><rect x='55' y='254' width='100' height='52' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Demux3' class='proptable' pointer-events='none' extent_Height='43' extent_Width='104' preferred_X='295' preferred_Y='197'>
+  <rect x='0' y='0' width='104' height='43' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Outputs</text>
+  <text stroke='none' x='86' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>2</text>
+  <rect x='0' y='19' width='104' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>DisplayOption</text>
+  <text stroke='none' x='86' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>bar</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>BusSelectionMode</text>
+  <text stroke='none' x='86' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <rect x='0' y='0' width='104' height='43' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Demux3' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Demux3'>Demux3</title>
+<g><rect x='285' y='192' width='5' height='51' stroke='none' fill='rgb(0%,0%,0%)' />
+<rect x='285' y='192' width='5' height='51' stroke='none' fill='rgb(0%,0%,0%)' />
+</g>
+<g></g>
+<g><rect x='285' y='192' width='5' height='51' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Demux2' class='proptable' pointer-events='none' extent_Height='43' extent_Width='104' preferred_X='295' preferred_Y='147'>
+  <rect x='0' y='0' width='104' height='43' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Outputs</text>
+  <text stroke='none' x='86' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>2</text>
+  <rect x='0' y='19' width='104' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>DisplayOption</text>
+  <text stroke='none' x='86' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>bar</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>BusSelectionMode</text>
+  <text stroke='none' x='86' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <rect x='0' y='0' width='104' height='43' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Demux2' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Demux2'>Demux2</title>
+<g><rect x='285' y='142' width='5' height='51' stroke='none' fill='rgb(0%,0%,0%)' />
+<rect x='285' y='142' width='5' height='51' stroke='none' fill='rgb(0%,0%,0%)' />
+</g>
+<g></g>
+<g><rect x='285' y='142' width='5' height='51' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Decoupled ControlledRobot' class='proptable' pointer-events='none' extent_Height='54' extent_Width='192' preferred_X='860' preferred_Y='128'>
+  <rect x='0' y='0' width='192' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>ShowPortLabels</text>
+  <text stroke='none' x='130' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>FromPortIcon</text>
+  <rect x='0' y='19' width='192' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Permissions</text>
+  <text stroke='none' x='130' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>ReadWrite</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>PermitHierarchicalResolution</text>
+  <text stroke='none' x='130' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>All</text>
+  <rect x='0' y='41' width='192' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>TreatAsAtomicUnit</text>
+  <text stroke='none' x='130' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <rect x='0' y='0' width='192' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Decoupled ControlledRobot' linkid='motion_turtle/Decoupled ControlledRobot' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Decoupled ControlledRobot'>Decoupled ControlledRobot</title>
+<g><rect x='555' y='123' width='300' height='414' stroke='none' fill='rgb(100%,100%,100%)' />
+<g><text stroke='none' x='639.5' y='549' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Decoupled ControlledRobot</text>
+</g>
+</g>
+<g><image xlink:href='./slwebview_1_0.png' x='555' y='123' width='300' height='414' preserveAspectRatio='none' clip-path='url(#clip_rect_7)' />
+</g>
+<g><rect x='555' y='123' width='300' height='414' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/Clock' class='proptable' pointer-events='none' extent_Height='32' extent_Width='80' preferred_X='112.5' preferred_Y='80'>
+  <rect x='0' y='0' width='80' height='32' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>DisplayTime</text>
+  <text stroke='none' x='62' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <rect x='0' y='19' width='80' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Decimation</text>
+  <text stroke='none' x='62' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>10</text>
+  <rect x='0' y='0' width='80' height='32' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Clock' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Clock'>Clock</title>
+<g><ellipse cx='95' cy='85' rx='10' ry='10' stroke='none' fill='rgb(100%,100%,100%)' />
+<ellipse cx='95' cy='85' rx='10' ry='10' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+<g><text stroke='none' x='82.5' y='107' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Clock</text>
+</g>
+</g>
+<g><polyline points='95,78 95,85 102,85 ' stroke='rgb(0%,0%,0%)' stroke-width='1' clip-path='url(#clip_rect_8)' fill = 'none'/>
+</g>
+<g></g>
+</g>
+<g display='none' id='prop.motion_turtle/Actual time in s' class='proptable' pointer-events='none' extent_Height='43' extent_Width='83' preferred_X='220' preferred_Y='75'>
+  <rect x='0' y='0' width='83' height='43' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Format</text>
+  <text stroke='none' x='57' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>short</text>
+  <rect x='0' y='19' width='83' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Decimation</text>
+  <text stroke='none' x='57' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>1</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Floating</text>
+  <text stroke='none' x='57' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <rect x='0' y='0' width='83' height='43' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/Actual time in s' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/Actual time in s'>Actual time in s</title>
+<g><rect x='125' y='70' width='90' height='30' stroke='none' fill='rgb(100%,100%,100%)' />
+<g><text stroke='none' x='133.5' y='112' font-size='10' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Actual time in s</text>
+</g>
+</g>
+<g><rect x='130' y='75' width='72' height='13' stroke='none' fill='rgb(100%,100%,100%)' clip-path='url(#clip_rect_9)' />
+<g></g>
+<rect x='130' y='75' width='72' height='13' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' clip-path='url(#clip_rect_9)' />
+</g>
+<g><rect x='125' y='70' width='90' height='30' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_0' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='215' preferred_Y='255'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_0' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_0'>line</title>
+<line x1='205' y1='305' x2='195' y2='305' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='200,300 200,310 210,305 200,300 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='175,280 175,305 195,305 197,305 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+<line x1='205' y1='280' x2='195' y2='280' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='200,275 200,285 210,280 200,275 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='175,280 195,280 197,280 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+<polyline points='175,280 175,280 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+<rect x='174' y='279' width='2' height='2' stroke='none' fill='rgb(0%,0%,0%)' />
+<line x1='205' y1='255' x2='195' y2='255' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='200,250 200,260 210,255 200,250 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='175,280 175,255 195,255 197,255 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+<line x1='155' y1='280' x2='160' y2='280' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<polyline points='158,280 160,280 175,280 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+<rect x='174' y='279' width='2' height='2' stroke='none' fill='rgb(0%,0%,0%)' />
+<rect x='174' y='279' width='2' height='2' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_1' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='335' preferred_Y='255'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_1' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_1'>line</title>
+<line x1='250' y1='255' x2='255' y2='255' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='255' x2='315' y2='255' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,250 320,260 330,255 320,250 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='253,255 255,255 315,255 317,255 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_2' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='890' preferred_Y='225'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_2' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_2'>line</title>
+<line x1='855' y1='225' x2='860' y2='225' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='880' y1='225' x2='870' y2='225' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='875,220 875,230 885,225 875,220 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,225 860,225 870,225 872,225 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_3' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='890' preferred_Y='255'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_3' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_3'>line</title>
+<line x1='855' y1='255' x2='860' y2='255' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='880' y1='255' x2='870' y2='255' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='875,250 875,260 885,255 875,250 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,255 860,255 870,255 872,255 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_4' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='335' preferred_Y='280'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_4' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_4'>line</title>
+<line x1='250' y1='280' x2='255' y2='280' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='280' x2='315' y2='280' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,275 320,285 330,280 320,275 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='253,280 255,280 315,280 317,280 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_5' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='240'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_5' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_5'>line</title>
+<line x1='525' y1='240' x2='530' y2='240' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='240' x2='540' y2='240' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,235 545,245 555,240 545,235 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,240 530,240 540,240 542,240 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_6' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='270'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_6' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_6'>line</title>
+<line x1='525' y1='270' x2='530' y2='270' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='270' x2='540' y2='270' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,265 545,275 555,270 545,265 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,270 530,270 540,270 542,270 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_7' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='335' preferred_Y='205'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_7' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_7'>line</title>
+<line x1='290' y1='205' x2='295' y2='205' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='205' x2='315' y2='205' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,200 320,210 330,205 320,200 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='293,205 295,205 315,205 317,205 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_8' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='335' preferred_Y='230'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_8' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_8'>line</title>
+<line x1='290' y1='230' x2='295' y2='230' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='230' x2='315' y2='230' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,225 320,235 330,230 320,225 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='293,230 295,230 315,230 317,230 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_9' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='300'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_9' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_9'>line</title>
+<line x1='525' y1='300' x2='530' y2='300' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='300' x2='540' y2='300' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,295 545,305 555,300 545,295 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,300 530,300 540,300 542,300 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_10' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='335' preferred_Y='305'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_10' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_10'>line</title>
+<line x1='250' y1='305' x2='255' y2='305' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='305' x2='315' y2='305' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,300 320,310 330,305 320,300 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='253,305 255,305 315,305 317,305 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_11' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='435' preferred_Y='100'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_11' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_11'>line</title>
+<line x1='355' y1='95' x2='360' y2='95' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='425' y1='116' x2='425' y2='106' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='430,111 420,111 425,121 430,111 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='358,95 360,95 425,95 425,106 425,108 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_12' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='130' preferred_Y='85'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_12' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_12'>line</title>
+<line x1='105' y1='85' x2='110' y2='85' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='120' y1='85' x2='110' y2='85' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='115,80 115,90 125,85 115,80 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='108,85 110,85 110,85 112,85 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_13' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='335' preferred_Y='155'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_13' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_13'>line</title>
+<line x1='290' y1='155' x2='295' y2='155' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='155' x2='315' y2='155' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,150 320,160 330,155 320,150 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='293,155 295,155 315,155 317,155 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_14' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='335' preferred_Y='180'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_14' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_14'>line</title>
+<line x1='290' y1='180' x2='295' y2='180' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='180' x2='315' y2='180' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,175 320,185 330,180 320,175 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='293,180 295,180 315,180 317,180 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_15' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='890' preferred_Y='165'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_15' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_15'>line</title>
+<line x1='855' y1='165' x2='860' y2='165' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='880' y1='165' x2='870' y2='165' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='875,160 875,170 885,165 875,160 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,165 860,165 870,165 872,165 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_16' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='904' preferred_Y='69'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_16' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_16'>line</title>
+<line x1='890' y1='240' x2='895' y2='240' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='280' y1='220' x2='270' y2='220' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='275,215 275,225 285,220 275,215 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='893,240 895,240 899,240 899,64 251,64 251,220 270,220 272,220 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_17' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='895' preferred_Y='75'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_17' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_17'>line</title>
+<line x1='855' y1='135' x2='860' y2='135' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='130' x2='315' y2='130' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,125 320,135 330,130 320,125 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,135 860,135 890,135 890,70 275,70 275,130 315,130 317,130 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_18' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='150'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_18' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_18'>line</title>
+<line x1='525' y1='150' x2='530' y2='150' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='150' x2='540' y2='150' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,145 545,155 555,150 545,145 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,150 530,150 540,150 542,150 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_19' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='900' preferred_Y='80'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_19' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_19'>line</title>
+<line x1='890' y1='180' x2='895' y2='180' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='280' y1='170' x2='270' y2='170' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='275,165 275,175 285,170 275,165 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='893,180 895,180 895,75 264,75 264,170 270,170 272,170 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_20' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='180'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_20' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_20'>line</title>
+<line x1='525' y1='180' x2='530' y2='180' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='180' x2='540' y2='180' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,175 545,185 555,180 545,175 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,180 530,180 540,180 542,180 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_21' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='210'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_21' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_21'>line</title>
+<line x1='525' y1='210' x2='530' y2='210' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='210' x2='540' y2='210' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,205 545,215 555,210 545,205 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,210 530,210 540,210 542,210 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_22' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='330'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_22' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_22'>line</title>
+<line x1='525' y1='330' x2='530' y2='330' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='330' x2='540' y2='330' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,325 545,335 555,330 545,325 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,330 530,330 540,330 542,330 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_23' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='360'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_23' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_23'>line</title>
+<line x1='525' y1='360' x2='530' y2='360' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='360' x2='540' y2='360' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,355 545,365 555,360 545,355 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,360 530,360 540,360 542,360 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_24' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='390'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_24' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_24'>line</title>
+<line x1='525' y1='390' x2='530' y2='390' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='390' x2='540' y2='390' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,385 545,395 555,390 545,385 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,390 530,390 540,390 542,390 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_25' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='420'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_25' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_25'>line</title>
+<line x1='525' y1='420' x2='530' y2='420' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='420' x2='540' y2='420' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,415 545,425 555,420 545,415 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,420 530,420 540,420 542,420 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_26' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='885' preferred_Y='440'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_26' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_26'>line</title>
+<line x1='855' y1='435' x2='860' y2='435' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='455' x2='315' y2='455' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,450 320,460 330,455 320,450 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,435 860,435 880,435 880,575 285,575 285,455 315,455 317,455 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_27' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='890' preferred_Y='410'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_27' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_27'>line</title>
+<line x1='855' y1='405' x2='860' y2='405' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='430' x2='315' y2='430' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,425 320,435 330,430 320,425 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,405 860,405 885,405 885,580 275,580 275,430 315,430 317,430 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_28' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='895' preferred_Y='380'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_28' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_28'>line</title>
+<line x1='855' y1='375' x2='860' y2='375' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='405' x2='315' y2='405' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,400 320,410 330,405 320,400 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,375 860,375 890,375 890,585 265,585 265,405 315,405 317,405 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_29' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='900' preferred_Y='350'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_29' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_29'>line</title>
+<line x1='855' y1='345' x2='860' y2='345' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='380' x2='315' y2='380' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,375 320,385 330,380 320,375 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,345 860,345 895,345 895,590 255,590 255,380 315,380 317,380 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_30' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='905' preferred_Y='320'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_30' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_30'>line</title>
+<line x1='855' y1='315' x2='860' y2='315' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='355' x2='315' y2='355' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,350 320,360 330,355 320,350 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,315 860,315 900,315 900,595 245,595 245,355 315,355 317,355 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_31' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='910' preferred_Y='290'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_31' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_31'>line</title>
+<line x1='855' y1='285' x2='860' y2='285' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='330' x2='315' y2='330' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,325 320,335 330,330 320,325 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,285 860,285 905,285 905,600 235,600 235,330 315,330 317,330 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_32' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='450'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_32' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_32'>line</title>
+<line x1='525' y1='450' x2='530' y2='450' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='450' x2='540' y2='450' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,445 545,455 555,450 545,445 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,450 530,450 540,450 542,450 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_33' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='880' preferred_Y='470'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_33' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_33'>line</title>
+<line x1='855' y1='465' x2='860' y2='465' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='480' x2='315' y2='480' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,475 320,485 330,480 320,475 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,465 860,465 875,465 875,570 295,570 295,480 315,480 317,480 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_34' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='875' preferred_Y='500'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_34' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_34'>line</title>
+<line x1='855' y1='495' x2='860' y2='495' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='505' x2='315' y2='505' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,500 320,510 330,505 320,500 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,495 860,495 870,495 870,565 305,565 305,505 315,505 317,505 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_35' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='890' preferred_Y='195'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_35' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_35'>line</title>
+<line x1='855' y1='195' x2='860' y2='195' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='880' y1='195' x2='870' y2='195' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='875,190 875,200 885,195 875,190 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,195 860,195 870,195 872,195 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_36' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='870' preferred_Y='530'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_36' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_36'>line</title>
+<line x1='855' y1='525' x2='860' y2='525' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='325' y1='530' x2='315' y2='530' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='320,525 320,535 330,530 320,525 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='858,525 860,525 865,525 865,560 315,560 315,530 317,530 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_37' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='480'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_37' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_37'>line</title>
+<line x1='525' y1='480' x2='530' y2='480' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='480' x2='540' y2='480' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,475 545,485 555,480 545,475 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,480 530,480 540,480 542,480 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<g display='none' id='prop.motion_turtle/_uniq_id_38' class='proptable' pointer-events='none' extent_Height='54' extent_Width='150' preferred_X='560' preferred_Y='510'>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='none' fill='rgb(100%,100%,100%)'  filter='url(#drop-shadow)' />
+  <text stroke='none' x='5' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>testPoint</text>
+  <text stroke='none' x='126' y='16' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='19' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>signalPropagation</text>
+  <text stroke='none' x='126' y='27' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>off</text>
+  <text stroke='none' x='5' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>MustResolveToSignalObject</text>
+  <text stroke='none' x='126' y='38' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>0</text>
+  <rect x='0' y='41' width='150' height='11' stroke='none' fill='rgb(90.1961%,90.1961%,90.1961%)' />
+  <text stroke='none' x='5' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>RTWStorageClass</text>
+  <text stroke='none' x='126' y='49' font-size='9' fill='rgb(0%,0%,0%)' font-family='Helvetica'>Auto</text>
+  <rect x='0' y='0' width='150' height='54' rx='5' ry='5' stroke='rgb(0%,0%,0%)' stroke-width='1' fill='none' />
+</g>
+<g id='motion_turtle/_uniq_id_38' linkid='' onclick='changeSys(evt)' onmouseover='showPropAndHighlight(evt)' onmouseout='hidePropAndUnhighlight(evt)'>
+  <title id='title.motion_turtle/_uniq_id_38'>line</title>
+<line x1='525' y1='510' x2='530' y2='510' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<g></g>
+<line x1='550' y1='510' x2='540' y2='510' stroke='rgb(0%,0%,0%)' stroke-width='1' />
+<polygon points='545,505 545,515 555,510 545,505 ' stroke='none' fill='rgb(0%,0%,0%)' />
+<g></g>
+<polyline points='528,510 530,510 540,510 542,510 ' stroke='rgb(0%,0%,0%)' stroke-width='1' fill = 'none'/>
+</g>
+<defs>
+  <clipPath id='clip_rect_0'><rect x='325' y='80' width='30' height='30' /></clipPath>
+  <clipPath id='clip_rect_1'><rect x='56' y='358' width='100' height='65' /></clipPath>
+  <clipPath id='clip_rect_2'><rect x='210' y='297' width='40' height='16' /></clipPath>
+  <clipPath id='clip_rect_3'><rect x='210' y='272' width='40' height='16' /></clipPath>
+  <clipPath id='clip_rect_4'><rect x='210' y='246' width='40' height='18' /></clipPath>
+  <clipPath id='clip_rect_5'><rect x='330' y='121' width='195' height='418' /></clipPath>
+  <clipPath id='clip_rect_6'><rect x='55' y='254' width='100' height='52' /></clipPath>
+  <clipPath id='clip_rect_7'><rect x='555' y='123' width='300' height='414' /></clipPath>
+  <clipPath id='clip_rect_8'><rect x='85' y='75' width='20' height='20' /></clipPath>
+  <clipPath id='clip_rect_9'><rect x='125' y='70' width='90' height='30' /></clipPath>
+</defs>
+</svg>
+  </g>
+  <g id='thumbnail.canvas' transform='translate(0,30)'>
+    <!--Thumbnails go there -->
+  </g>
+  <rect id='zoomBoxRectangle' x='0' y='0' height='0' width='0' stroke='black' fill='none' style='stroke-dasharray: 1, 1;stroke: black; stroke-width: 1;' visible='none'/>
+  <defs>
+    <filter id='drop-shadow'>
+      <feGaussianBlur in='SourceAlpha' stdDeviation='5' result='blur' />
+      <feOffset in='blur' dx='4' dy='4' result='offsetBlur' />
+      <feMerge>
+        <feMergeNode in='offsetBlur' />
+        <feMergeNode in='SourceGraphic' />
+      </feMerge>
+    </filter>
+    <filter id='highlight'>
+      <feColorMatrix type='matrix' values=' 0 0 0 0 0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 0 1.0 0' />
+      <feGaussianBlur stdDeviation='3' result='coloredBlur' />
+      <feMerge>
+        <feMergeNode in='coloredBlur' />
+        <feMergeNode in='SourceGraphic' />
+      </feMerge>
+    </filter>
+  </defs>
+  <g id='group.navCommands'>
+    <g id='prop.navHelp' display='none' opacity='.97' transform='translate(18,18 )' stroke='none' fill='black' onmouseover='displayTarget(evt)' onmouseout='dismissTarget(evt)' font-size='12'>
+      <rect x='0' y='0' height='300' width='180' stroke='black' fill='white' filter='url(#drop-shadow)' />
+      <switch>
+        <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='5' y='12' fill='black' stroke='none'>&#12490;&#12499;&#12466;&#12540;&#12471;&#12519;&#12531;&#12467;&#12510;&#12531;&#12489;</text>
+        <text x='5' y='12' fill='black' stroke='none'>Navigation Commands</text>
+      </switch>
+      <g onmouseover='highlightHelpKey(evt,"E")' onmouseout='unhighlightHelpKey(evt,"E")'>
+        <rect id='helpkey.E' onclick='panUp(evt)' x='3' y='21' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='36' text-anchor='middle' font-weight='bold' pointer-events='none'>E</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='36'>&#19978;&#12408;&#31227;&#21205;</text>
+          <text x='24' y='36'>Pan up</text>
+        </switch>
+      </g>
+      <g onmouseover='highlightHelpKey(evt,"C")' onmouseout='unhighlightHelpKey(evt,"C")'>
+        <rect id='helpkey.C' onclick='panDown(evt)' x='3' y='45' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='60' text-anchor='middle' font-weight='bold' pointer-events='none'>C</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='60'>&#19979;&#12408;&#31227;&#21205;</text>
+          <text x='24' y='60'>Pan down</text>
+        </switch>
+      </g>
+      <g onmouseover='highlightHelpKey(evt,"D")' onmouseout='unhighlightHelpKey(evt,"D")'>
+        <rect id='helpkey.D' onclick='panLeft(evt)' x='3' y='69' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='84' text-anchor='middle' font-weight='bold' pointer-events='none'>D</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='84'>&#24038;&#12408;&#31227;&#21205;</text>
+          <text x='24' y='84'>Pan left</text>
+        </switch>
+      </g>
+      <g onmouseover='highlightHelpKey(evt,"G")' onmouseout='unhighlightHelpKey(evt,"G")'>
+        <rect id='helpkey.G' onclick='panRight(evt)' x='3' y='93' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='108' text-anchor='middle' font-weight='bold' pointer-events='none'>G</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='108'>&#21491;&#12408;&#31227;&#21205;</text>
+          <text x='24' y='108'>Pan right</text>
+        </switch>
+      </g>
+      <g onmouseover='highlightHelpKey(evt,"P")' onmouseout='unhighlightHelpKey(evt,"P")'>
+        <rect id='helpkey.P' onclick='toggleMousePanScrim(evt)' x='3' y='117' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='132' text-anchor='middle' font-weight='bold' pointer-events='none'>P</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='132'>&#12510;&#12454;&#12473;&#12391;&#31227;&#21205;</text>
+          <text x='24' y='132'>Pan with mouse</text>
+        </switch>
+      </g>
+      <g onmouseover='highlightHelpKey(evt,"F")' onmouseout='unhighlightHelpKey(evt,"F")'>
+        <rect id='helpkey.F' onclick='fillScreen(evt)' x='3' y='153' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='168' text-anchor='middle' font-weight='bold' pointer-events='none'>F</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='168'>&#12501;&#12523;&#12473;&#12463;&#12522;&#12540;&#12531;&#12395;&#25313;&#22823;</text>
+          <text x='24' y='168'>Zoom to full screen</text>
+        </switch>
+      </g>
+      <g onmouseover='highlightHelpKey(evt,"1")' onmouseout='unhighlightHelpKey(evt,"1")'>
+        <rect id='helpkey.1' onclick='zoomNormal(evt)' x='3' y='177' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='192' text-anchor='middle' font-weight='bold' pointer-events='none'>1</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='192'>100% &#12395;&#25313;&#22823;</text>
+          <text x='24' y='192'>Zoom to 100%</text>
+        </switch>
+      </g>
+      <g onmouseover='highlightHelpKey(evt,"R")' onmouseout='unhighlightHelpKey(evt,"R")'>
+        <rect id='helpkey.R' onclick='zoomIn(evt)' x='3' y='201' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='216' text-anchor='middle' font-weight='bold' pointer-events='none'>R</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='216'>&#12474;&#12540;&#12512; &#12452;&#12531;</text>
+          <text x='24' y='216'>Zoom in</text>
+        </switch>
+      </g>
+      <g onmouseover='highlightHelpKey(evt,"V")' onmouseout='unhighlightHelpKey(evt,"V")'>
+        <rect id='helpkey.V' onclick='zoomOut(evt)' x='3' y='225' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='240' text-anchor='middle' font-weight='bold' pointer-events='none'>V</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='240'>&#12474;&#12540;&#12512; &#12450;&#12454;&#12488;</text>
+          <text x='24' y='240'>Zoom out</text>
+        </switch>
+      </g>
+      <g onmouseover='highlightHelpKey(evt,"X")' onmouseout='unhighlightHelpKey(evt,"X")'>
+        <rect id='helpkey.X' onclick='toggleExpose(evt)' x='3' y='261' width='18' height='18' rx='3' ry='3' fill='#eee' stroke='black' />
+        <text x='12' y='276' text-anchor='middle' font-weight='bold' pointer-events='none'>X</text>
+        <switch>
+          <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='24' y='276'>&#12377;&#12409;&#12390;&#12398;&#12524;&#12452;&#12516;&#12540;&#12434;&#34920;&#31034;</text>
+          <text x='24' y='276'>Show all layers</text>
+        </switch>
+      </g>
+    </g>
+    <g id='navHelp' display='inline' fill='none' transform='translate(15,15 )' stroke='rgb(0,0,0)' stroke-width='1.5' onmouseover='showProp(evt)' onmouseout='hideProp(evt)' font-size='12'>
+      <circle cx='0' cy='0' r='10' pointer-events='all' />
+      <text x='0' y='3' stroke='none' fill='black' text-anchor='middle' font-weight='bold' pointer-events='none'>?</text>
+    </g>
+    <g id='prop.navHome' display='none' opacity='.97' transform='translate(45,25 )' onmouseover='displayTarget(evt)' onmouseout='dismissTarget(evt)' font-size='12'>
+      <rect x='0' y='0' height='18' width='100' stroke='black' fill='white' filter='url(#drop-shadow)' />
+      <switch>
+        <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='5' y='12' fill='black' stroke='none'>&#12507;&#12540;&#12512;&#12434;&#34920;&#31034;</text>
+        <text x='5' y='12' fill='black' stroke='none'>View home</text>
+      </switch>
+    </g>
+    <g id='navHome' fill='none' transform='translate(40,15 )' stroke='rgb(0,0,0)' stroke-width='1.5' onclick='changeSysHome(evt)' onmouseover='showProp(evt);highlight(evt,1)' onmouseout='hideProp(evt);unhighlight(evt,1)'>
+      <circle cx='0' cy='0' r='10' pointer-events='all' />
+      <polygon points='-2.5,-1 2.5,-1 0,-6' pointer-events='none' />
+      <polygon points='-2.5,6 2.5,6 0,1' pointer-events='none' />
+    </g>
+    <g id='prop.navPrev' display='none' opacity='.97' transform='translate(70,25 )' onmouseover='displayTarget(evt)' onmouseout='dismissTarget(evt)' font-size='12'>
+      <rect x='0' y='0' height='18' width='100' fill='white' stroke='black' filter='url(#drop-shadow)' />
+      <switch>
+        <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='5' y='12' fill='black' stroke='none'>&#21069;&#12434;&#34920;&#31034;</text>
+        <text x='5' y='12' fill='black' stroke='none'>View previous</text>
+      </switch>
+    </g>
+    <g id='navPrev' fill='none' transform='translate(65,15 )' stroke='rgb(0,0,0)' stroke-width='1.5' onclick='changeSysPrev(evt)' onmouseover='showProp(evt);highlight(evt,1)' onmouseout='hideProp(evt);unhighlight(evt,1)'>
+      <circle cx='0' cy='0' r='10' pointer-events='all' />
+      <polygon points='-7,0 3.5,-6.06218 3.5,6.06218' pointer-events='none' />
+    </g>
+    <g id='prop.navExpose' display='none' opacity='.97' transform='translate(95,25 )' onmouseover='displayTarget(evt)' onmouseout='dismissTarget(evt)' font-size='12'>
+      <rect x='0' y='0' height='18' width='150' stroke='black' fill='white' filter='url(#drop-shadow)' />
+      <switch>
+        <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='5' y='12' fill='black' stroke='none'>&#12377;&#12409;&#12390;&#12398;&#12524;&#12452;&#12516;&#12540;&#12434;&#34920;&#31034;</text>
+        <text x='5' y='12' fill='black' stroke='none'>Show all layers</text>
+      </switch>
+    </g>
+    <g id='navExpose' fill='none' transform='translate(90,15 )' stroke='rgb(0,0,0)' stroke-width='1.5' onclick='toggleExpose(evt)' onmouseover='showProp(evt);highlight(evt,1)' onmouseout='hideProp(evt);unhighlight(evt,1)'>
+      <circle cx='0' cy='0' r='10' pointer-events='all' />
+      <rect x='-5' y='-5' height='3.5' width='3.5' pointer-events='none' />
+      <rect x='-5' y='1.5' height='3.5' width='3.5' pointer-events='none' />
+      <rect x='1.5' y='1.5' height='3.5' width='3.5' pointer-events='none' />
+      <rect x='1.5' y='-5' height='3.5' width='3.5' pointer-events='none' />
+    </g>
+    <g id='canvas.navExpose' display='none' />
+    <g id='navTitle' display='inline' fill='black' stroke='none' text-align='start' font-size='12'>
+      <switch>
+        <text systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' x='105' y='21'>Simulink &#12398; Web &#34920;&#31034;</text>
+        <text x='105' y='21'>Simulink Web View</text>
+      </switch>
+    </g>
+    <g id='prop.navAbout' display='none' opacity='.97' transform='translate(65,60 )' font-size='12'>
+      <rect x='0' y='0' height='30' width='275' stroke='black' fill='white' filter='url(#drop-shadow)' />
+      <switch>
+        <g systemLanguage='ja' font-family='MS Gothic,AppleGothic,Caslon' fill='black' stroke='none'>
+          <text x='5' y='12'>Simulink &#12398; Web &#34920;&#31034;</text>
+          <text x='5' y='24'>Simulink Report Generator v3.0 &#12391;&#12456;&#12463;&#12473;&#12509;&#12540;&#12488;</text>
+        </g>
+        <g fill='black' stroke='none'>
+          <text x='5' y='12'>Simulink Web View</text>
+          <text x='5' y='24'>Exported with Simulink Report Generator v3.0</text>
+        </g>
+      </switch>
+    </g>
+  </g>
+</svg>
