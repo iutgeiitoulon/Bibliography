@@ -1,0 +1,373 @@
+Received: from DB8PR07MB6268.eurprd07.prod.outlook.com (2603:10a6:10:13c::23)
+ by AS1PR07MB8830.eurprd07.prod.outlook.com with HTTPS; Thu, 9 Feb 2023
+ 10:07:32 +0000
+Received: from BN8PR04CA0051.namprd04.prod.outlook.com (2603:10b6:408:d4::25)
+ by DB8PR07MB6268.eurprd07.prod.outlook.com (2603:10a6:10:13c::23) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6086.18; Thu, 9 Feb
+ 2023 10:07:30 +0000
+Received: from BN7NAM10FT108.eop-nam10.prod.protection.outlook.com
+ (2603:10b6:408:d4:cafe::f3) by BN8PR04CA0051.outlook.office365.com
+ (2603:10b6:408:d4::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6086.19 via Frontend
+ Transport; Thu, 9 Feb 2023 10:07:29 +0000
+Authentication-Results: spf=pass (sender IP is 194.254.129.82)
+ smtp.mailfrom=univ-lille.fr; dkim=pass (signature was verified)
+ header.d=univ-lille.fr;dmarc=pass action=none
+ header.from=univ-lille.fr;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of univ-lille.fr designates
+ 194.254.129.82 as permitted sender) receiver=protection.outlook.com;
+ client-ip=194.254.129.82; helo=smtp-out-1.univ-lille.fr; pr=C
+Received: from smtp-out-1.univ-lille.fr (194.254.129.82) by
+ BN7NAM10FT108.mail.protection.outlook.com (10.13.157.170) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6086.19 via Frontend Transport; Thu, 9 Feb 2023 10:07:29 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:FB478D4496592E16230E3061D01AFF6402D43A8A863C1A694FB95B3FDBE07268;UpperCasedChecksum:067017D159215DAAD1E9776E333D12C928065251D4C1580E4B669E5372C71DA8;SizeAsReceived:3001;Count:33
+Received: from sympa6-1.univ-lille.fr (sympa6-1.univ-lille.fr [10.140.10.62])
+	by smtp-out-1.univ-lille.fr (Postfix) with ESMTP id 4PCCGS45p3zBsFr;
+	Thu,  9 Feb 2023 11:07:28 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=univ-lille.fr; s=dkim;
+	t=1675937248; bh=bErLn6eXblfEv6aVjviCAYvqm0fYzg8kYZVb5Fms6N0=;
+	h=Date:From:To:Subject:Reply-To:List-Id:List-Help:List-Subscribe:
+	 List-Unsubscribe:List-Post:List-Owner:List-Archive:From;
+	b=xTMaahirQNZ+I7+OVGLWhJ+S7bZe1OvuH96WfWzRnxdWtr1MOJEFHSQJvjrTqNNFT
+	 9yUoc+jl6SyPy2JTTXvpVUB1XIwsM7GWJd7+Zs0OmO4g/Qm/B5tgOyode0WsEXueGy
+	 iVlo//Bc57YMAtsLtqQ9CjK8P1Nk7nRgfm3ZkBdySK4VGsqp07dtvvNhaaVzDKXF3B
+	 sQnr7dVv4KK5dLX0w/cZ1lnvR3ROVDZ5mSyP+1ojkwmrTvO+47WieRbuVg0Y63snQL
+	 srfLTSFvipyiI20821bxaVNRRUZ9/hgMI1KgsG4+ZGHYxYUiB6CajVZRYVHjGjBrP5
+	 T7frmUjoRVfyQ==
+Received: by sympa6-1.univ-lille.fr (Postfix, from userid 10001)
+	id 7295623962; Thu,  9 Feb 2023 11:07:28 +0100 (CET)
+Received: from smtp01.univ-lille.fr (smtp01.univ-lille.fr [194.254.129.95])
+	by sympa6-1.univ-lille.fr (Postfix) with ESMTP id E340E22FA3
+	for <ulp-cochlea@univ-lille.fr>; Thu,  9 Feb 2023 11:07:22 +0100 (CET)
+Received: from zimbra-store01.univ-lille.fr (zimbra-store01.univ-lille.fr [10.140.10.41])
+	by smtp01.univ-lille.fr (Postfix) with ESMTP id 4PCCGL6RKJz7rb0
+	for <ulp-cochlea@univ-lille.fr>; Thu,  9 Feb 2023 11:07:22 +0100 (CET)
+Date: Thu, 9 Feb 2023 11:07:22 +0100 (CET)
+From: Hammouda Elbez <hammouda.elbez@univ-lille.fr>
+To: ulp-cochlea@univ-lille.fr
+Message-ID: <331294321.54045900.1675937242226.JavaMail.zimbra@univ-lille.fr>
+Content-Type: multipart/alternative; 
+	boundary="=_a31f0ba5-594d-4f8a-a2eb-49af7051363e"
+X-Originating-IP: [134.206.212.134]
+X-Mailer: Zimbra 8.8.15_GA_4484 (ZimbraWebClient - GC109 (Linux)/8.8.15_GA_4481)
+Thread-Index: nU1XdSizOd7Xo8fYSx/GXmZnRtZFJQ==
+Thread-Topic: Ressources SNN et Audio
+Subject: [ulp-cochlea] Ressources SNN et Audio
+Reply-To: Hammouda Elbez <hammouda.elbez@univ-lille.fr>
+X-Loop: ulp-cochlea@univ-lille.fr
+X-Sequence: 40
+Errors-To: ulp-cochlea-owner@univ-lille.fr
+Precedence: bulk
+Sender: ulp-cochlea-request@univ-lille.fr
+X-no-archive: yes
+List-Id: <ulp-cochlea.univ-lille.fr>
+List-Help: <mailto:sympa@univ-lille.fr?subject=help>
+List-Subscribe: <mailto:sympa@univ-lille.fr?subject=subscribe%20ulp-cochlea>
+List-Unsubscribe: <mailto:sympa@univ-lille.fr?subject=unsubscribe%20ulp-cochlea>
+List-Post: <mailto:ulp-cochlea@univ-lille.fr>
+List-Owner: <mailto:ulp-cochlea-request@univ-lille.fr>
+List-Archive: <https://listes.univ-lille.fr/sympa/arc/ulp-cochlea>
+Archived-At: <https://listes.univ-lille.fr/sympa/arcsearch_id/ulp-cochlea/2023-02/331294321.54045900.1675937242226.JavaMail.zimbra%40univ-lille.fr>
+X-Original-DMARC-Record: domain=univ-lille.fr; _dmarc.univ-lille.fr.	21592	IN	TXT	(
+	"v=DMARC1; p=none; rua=mailto:dsi-messagerie-dmarc@univ-lille.fr; ruf=mailto:dsi-messagerie-dmarc-erreurs@univ-lille.fr;"
+	)
+X-IncomingHeaderCount: 33
+Return-Path: ulp-cochlea-owner@univ-lille.fr
+X-MS-Exchange-Organization-ExpirationStartTime: 09 Feb 2023 10:07:29.5288
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 99354a2e-3219-47a1-f81e-08db0a8573f2
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN7NAM10FT108:EE_|DB8PR07MB6268:EE_
+X-MS-Exchange-Organization-AuthSource:
+ BN7NAM10FT108.eop-nam10.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 2/9/2023 10:07:16 AM
+X-MS-Office365-Filtering-Correlation-Id: 99354a2e-3219-47a1-f81e-08db0a8573f2
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 194.254.129.82
+X-SID-PRA: ULP-COCHLEA-REQUEST@UNIV-LILLE.FR
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Feb 2023 10:07:29.4038
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 99354a2e-3219-47a1-f81e-08db0a8573f2
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource:
+ BN7NAM10FT108.eop-nam10.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB8PR07MB6268
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.6725304
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6086.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	abwl:0;wl:0;pcwl:0;kl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(90000117)(90005022)(91005020)(91035115)(5061607266)(5061608174)(9050020)(9100338)(2008001134)(2008121020)(4810004)(4910033)(8820095)(9575002)(10195002)(9320005);
+X-Message-Info:
+	qZelhIiYnPk2IDVyugEH98L6pjMuXMYPPWjd+e1uUEzIs9rALRTYwuS02bD0oz9XoatLr3R1qBK1FtkT+KlVKfWmwlM5NPqiNjUv9Jrjd5BDTm0OZcA8VT399FM5kvKOgaBNKFtVFkoYSiOqA1FNedlbuZYEyfnN59SIjmYB+tb7fa2/HPikFVJyGtCqh8aqFN2O8u+TlW63u1EuOXGuyA==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?V2RSVzdpSWl6YXRzZ20rVlUrbzlYSi9mN2RlcW1RTkJqSkpURDkxWk53N3M4?=
+ =?utf-8?B?UmZWYytocFl5bVJUalFEKzBqWXJMNFQzcDdKTmdoeitHS0trT0hycStZNmVW?=
+ =?utf-8?B?cmZXdll1U0FWMDRUSXdCVm5JanVYOXJUQ0lmWDE2WG1QQkR0cjZvZUVDZTVU?=
+ =?utf-8?B?bXorM2N6cStuOEhNMDUrYStIRjhoK2Rwc0M5cEtmSnBaR0txam5IZ2YzVnBJ?=
+ =?utf-8?B?QmJodFhZdkkvK2N1SXpQYWVQSnVCQ3FTNmk0UG01OHlIeW0rdTBVeDJheXhY?=
+ =?utf-8?B?d002OWdWbG1zUDI5WjFUZnd1TlM1Vk03MEp3UVQ0NDhwWU9US3hoZFdzOHlV?=
+ =?utf-8?B?TDZZZFBLekFlT3lxU0Y5T25EeDA5VWhlQ1FnYmFJRnlnRUQwZXpVREVxaXRD?=
+ =?utf-8?B?ZGl5akFNZE92RG9DZWF0emJ4a3h5bEZkNWdzaVNTdERSdy9OUGFFaDFGYUll?=
+ =?utf-8?B?ZTI0a2hHZWJEc0xoK0tIR3ZUeW5TYldQUStGcWJSZkdTMDVvZkVuN0dKbi9y?=
+ =?utf-8?B?RGVnSzA3dm5EcTh6aWhKYjZNU2FpY1FqeVdZTGdXaGd4QzlBakgzWS95UU9p?=
+ =?utf-8?B?d24rSkRTNDZuK3FZMDVWdjNBeEJ3SWx3R0xyN1M4OXFaTW91MWtjNm1BSWVx?=
+ =?utf-8?B?OTF0U0E1M0NQdWFQRlRwSWl0NFFmUlBtbGJMQ1FGTWpFM1BqUjM2eURTNzE0?=
+ =?utf-8?B?amh4NDVJc2lPbFZucWViWGhPa3RXT2F0UUphVUg5bG1vS05pWDFuMDNRQit0?=
+ =?utf-8?B?a2xpc1BlMThsTHJiZnhxWVFQRGVmd2Mva0VSdlVQMzVuSDRKNENoRmlac3RN?=
+ =?utf-8?B?U1lTL09kQzZSV3RjdjFKZTVqdlNBZ0lpMThiSDNXaGJGay9QR2RJRlRWOEp3?=
+ =?utf-8?B?YkdPNU13ckxjVXk3TlhVcVZBVHpIcXNXWXFzNlVBK0cxWldmczF3dWo3a0li?=
+ =?utf-8?B?MGtFWThiYktGWTUrZ1JHb2JRS1pSYTBTL2lsN05rZW5yRE9HZUxGakZsYW5h?=
+ =?utf-8?B?alphU2JRNmc3eW9GNGJ2Q1drVEZ6RjNTMnE4bVZHOHN0dVJyNXRacEFpYWJC?=
+ =?utf-8?B?amRwMnpkMFQ1cFpzclByZUV3VUMxdVNTSjI0a0lHOGJjRzlSRzRnMHRjK3Ns?=
+ =?utf-8?B?cVFtSStvTElzbEs2cktBcTNaci9zVVo4SU0reE9mZXJCU2w0alo1TC9BK3Jk?=
+ =?utf-8?B?dG5HTXZQcTdkSFNRNkkxc0tFVE9ac1g1VVliT0dFZXVrRnNIY3lRY01hUjBN?=
+ =?utf-8?B?aDhrZ2x5YUllMmQ5YUlGUjhIWDl4eDlwVXIzOVZIQWR5cXRoMDVLUkUzQXY1?=
+ =?utf-8?B?OFhNTTl4WWs3SHVZckFnMkVTZER3b3I1VXc1eHJvaDA0c2hNaUs2VW1aSHJF?=
+ =?utf-8?B?ZFV3RVFGZmpxNUJZcElaWTYzZTU5VXJlZytIVTZ4NkFTWVFvWTAzVnc0WmY0?=
+ =?utf-8?B?TkZrWFNYdlpUZGpPaWsyT0NoZGhKbExGQldHSmExSWYvQTdUTVIzNmVEOHFk?=
+ =?utf-8?B?NFdNVDhIeTlORUkrd1pyeEF3a1BZVFJJelJsYXFnSlN6SndoS2VaQmdUSGRJ?=
+ =?utf-8?B?emd4ZTZMa0docFJYdzRGV2NMdk1mbjZiUEVubFFicjM5aWREeVc1MDFrR2xZ?=
+ =?utf-8?B?WUR1R0FIbk8yM0VrTHg3RWprd3dOZEJ0RGFKREJIb1pZNmJLU3RVQ2dIb09j?=
+ =?utf-8?B?Ymt4TjRMckFCaDBUVzdERWZLb2x0cFBFZ3J5eU9VN09DTkhsNkdKRnN3N280?=
+ =?utf-8?B?aWN1dXArc0pNUThweFZkWCtpMnRBL0RFMVpORWFlMEliWVZiKzN6Z1Z0c1V1?=
+ =?utf-8?B?T01yTmsvYzFtUUV4Z3FXZG9maENCdTVFNFY4cVRJVDUzd0ZtWUkwdWdwY1lk?=
+ =?utf-8?B?Um9MY3ppdUV4YjdOYU4yenk4UzVtYi83Ymxvc0RyZ241SXF4TnJ1VHJ1dklW?=
+ =?utf-8?B?STdtNVN0OFIwRE9QbEhxMW8xZnE5WUtqcmxaWVAzOFVCRHJVTHJEaXBpUVJt?=
+ =?utf-8?B?RHFZcHB5b1R4eVdGbjBJRzV2NlltYldGTTdPdFVzSzFVRmNnS3ZHZnhhRVVR?=
+ =?utf-8?B?aUdFd3ZQRS9NcUJhb1M1NzBlS0w2c3dtek1rbFpVYVpsekxqektTVGFnQkJJ?=
+ =?utf-8?Q?TaN2kIhTPZswRdZEhNWzI96eW?=
+MIME-Version: 1.0
+
+--=_a31f0ba5-594d-4f8a-a2eb-49af7051363e
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour,=20
+
+Voici quelques ressources pour le traitement audio avec SNN que je souhaite=
+ partager avec vous:=20
+
+Un travail qui utilise deux produits de SynSense: XYLO (mat=C3=A9riel) et R=
+ockpool (logiciel) pour la classification audio =C3=A0 l'aide d'un r=C3=A9s=
+eau de neurones =C3=A0 impulsions avec du Surrogate gradient :=20
+Sub-mW Neuromorphic SNN audio processing applications with Rockpool and Xyl=
+o: [ https://arxiv.org/pdf/2208.12991.pdf | https://arxiv.org/pdf/2208.1299=
+1.pdf ]=20
+
+
+Le papier nous donne une id=C3=A9e sur ce qui est fait en SNN pour l'audio =
+(impulsions et non images de spectrogramme ou de cochl=C3=A9agramme) en ter=
+mes de mat=C3=A9rielle, architecture du r=C3=A9seau, et l'apprentissage.=20
+
+XYLO | SynSense : [ https://www.synsense.ai/products/xylo/ | https://www.sy=
+nsense.ai/products/xylo/ ]=20
+Rockpool: a python package for working with dynamical neural network archit=
+ectures: [ https://rockpool.ai/ | https://rockpool.ai ]=20
+
+Base de donne=C3=A9s utilis=C3=A9es dans le travail :=20
+QUT-NOISE: multiple sequential hours of ambient audio scene recordings: [ h=
+ttps://research.qut.edu.au/saivt/databases/qut-noise-databases-and-protocol=
+s/ | https://research.qut.edu.au/saivt/databases/qut-noise-databases-and-pr=
+otocols/ ]=20
+
+
+
+G=C3=A9n=C3=A9rer des impulsions =C3=A0 partir de l'audio (utile dans le ca=
+s d'un manque de donn=C3=A9es r=C3=A9elles) : Lauscher: an artificial cochl=
+ea model for generating spikes from audio: [ https://github.com/electronicv=
+isions/lauscher | https://github.com/electronicvisions/lauscher ]=20
+Un exemple de dataset g=C3=A9n=C3=A9rer avec cette biblioth=C3=A8que: [ htt=
+ps://zenkelab.org/resources/spiking-heidelberg-datasets-shd/ | https://zenk=
+elab.org/resources/spiking-heidelberg-datasets-shd/ ]=20
+
+Cordialement,=20
+Hammouda=20
+--=20
+[ http://www.univ-lille.fr/ ]=20
+Hammouda ELBEZ=20
+Ing=C3=A9nieur de recherche=20
+[ mailto:Hammouda.Elbez@univ-lille.fr | Hammouda.Elbez@univ-lille.fr ]=20
+IRCICA : 50 avenue Halley - Bureau 122, 59658 Villeneuve d=E2=80=99Ascq ced=
+ex=20
+T. +33 (0)6 56 66 63 01=20
+
+--=_a31f0ba5-594d-4f8a-a2eb-49af7051363e
+Content-Type: multipart/related; 
+	boundary="=_6c714737-7152-4c05-8c80-2d1bbd2533a8"
+
+--=_6c714737-7152-4c05-8c80-2d1bbd2533a8
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body><div style=3D"font-family: arial, helvetica, sans-serif; font-size: 1=
+2pt; color: #000000"><div style=3D"font-family: arial, helvetica, sans-seri=
+f; font-size: 12pt; color: #000000"><div>Bonjour,<br><br>Voici quelques res=
+sources pour le traitement audio avec SNN que je souhaite partager avec vou=
+s:<br><br>Un travail qui utilise deux produits de SynSense: XYLO (mat=C3=A9=
+riel) et Rockpool (logiciel) pour la classification audio =C3=A0 l'aide d'u=
+n r=C3=A9seau de neurones =C3=A0 impulsions avec du Surrogate gradient :<br=
+><strong>Sub-mW Neuromorphic SNN audio processing applications with Rockpoo=
+l and Xylo:</strong> <a href=3D"https://arxiv.org/pdf/2208.12991.pdf">https=
+://arxiv.org/pdf/2208.12991.pdf</a></div><div><p style=3D"margin: 0px;" dat=
+a-mce-style=3D"margin: 0px;">Le papier nous donne une id=C3=A9e sur ce qui =
+est fait en SNN pour l'audio (impulsions et non images de spectrogramme ou =
+de cochl=C3=A9agramme) en termes de mat=C3=A9rielle, architecture du r=C3=
+=A9seau, et l'apprentissage.</p></div><div><br><strong>XYLO | SynSense :</s=
+trong> <a href=3D"https://www.synsense.ai/products/xylo/">https://www.synse=
+nse.ai/products/xylo/</a></div><div><strong>Rockpool: </strong>a python pac=
+kage for working with dynamical neural network architectures: <a href=3D"ht=
+tps://rockpool.ai">https://rockpool.ai</a></div><div><br>Base de donne=C3=
+=A9s utilis=C3=A9es dans le travail&nbsp;:<br><strong>QUT-NOISE:</strong> m=
+ultiple sequential hours of ambient audio scene recordings: <a href=3D"http=
+s://research.qut.edu.au/saivt/databases/qut-noise-databases-and-protocols/"=
+>https://research.qut.edu.au/saivt/databases/qut-noise-databases-and-protoc=
+ols/</a></div><div><br><p style=3D"margin: 0px;" data-mce-style=3D"margin: =
+0px;">G=C3=A9n=C3=A9rer des impulsions =C3=A0 partir de l'audio (utile dans=
+ le cas d'un manque de donn=C3=A9es r=C3=A9elles) :</p><strong><span style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-=
+caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-i=
+ndent: 0px; text-transform: none; white-space: normal; widows: 2; word-spac=
+ing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 2=
+55); text-decoration-thickness: initial; text-decoration-style: initial; te=
+xt-decoration-color: initial; float: none; display: inline !important;" dat=
+a-mce-style=3D"color: #000000; font-family: arial, helvetica, sans-serif; f=
+ont-size: 16px; font-style: normal; font-variant-ligatures: normal; font-va=
+riant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; widows: 2; wor=
+d-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; =
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; float: none; display: inline !important;">Lauscher=
+: </span></strong>an artificial cochlea model for generating spikes from au=
+dio: <a href=3D"https://github.com/electronicvisions/lauscher">https://gith=
+ub.com/electronicvisions/lauscher</a><br></div><div>Un exemple de dataset g=
+=C3=A9n=C3=A9rer avec cette biblioth=C3=A8que: <a href=3D"https://zenkelab.=
+org/resources/spiking-heidelberg-datasets-shd/">https://zenkelab.org/resour=
+ces/spiking-heidelberg-datasets-shd/</a><br></div><div><br data-mce-bogus=
+=3D"1"></div><div>Cordialement,<br>Hammouda</div></div><div data-marker=3D"=
+__SIG_PRE__"><div>--<br>&nbsp;<a href=3D"http://www.univ-lille.fr/" target=
+=3D"_blank"><img src=3D"cid:d77031a10069608f91ebf92c4672fb40e273623e@zimbra=
+" data-mce-src=3D"http://zimbra.univ-lille.fr/home/hammouda.elbez@univ-lill=
+e.fr/Briefcase/logo-ul.png" width=3D"143" height=3D"47" doc=3D"Briefcase/lo=
+go-ul.png"></a><br><span style=3D"color: rgb(153, 51, 0); font-family: verd=
+ana, arial, sans-serif; font-size: 8pt;"><b>Hammouda ELBEZ</b></span><br><s=
+pan style=3D"font-family: verdana, arial, sans-serif; font-size: 8pt;"><b>I=
+ng=C3=A9nieur de recherche</b></span><br><span style=3D"color: rgb(174, 37,=
+ 115); font-family: verdana, arial, sans-serif; font-size: 8pt;"><a href=3D=
+"mailto:Hammouda.Elbez@univ-lille.fr" rel=3D"nofollow noopener noreferrer n=
+ofollow noopener noreferrer nofollow noopener noreferrer nofollow noopener =
+noreferrer" target=3D"_blank">Hammouda.Elbez@univ-lille.fr</a></span><br><s=
+pan style=3D"font-family: verdana, arial, sans-serif; font-size: 8pt;">IRCI=
+CA : 50 avenue Halley - Bureau 122, 59658 Villeneuve d=E2=80=99Ascq cedex&n=
+bsp;<br><span style=3D"color: #ae2573;">T.</span>&nbsp;+33 (0)6 56 66 63 01=
+</span></div></div></div></body></html>=
+
+--=_6c714737-7152-4c05-8c80-2d1bbd2533a8
+Content-Type: image/png; name=logo-ul.png
+Content-Disposition: attachment; filename=logo-ul.png
+Content-Transfer-Encoding: base64
+Content-ID: <d77031a10069608f91ebf92c4672fb40e273623e@zimbra>
+
+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
++KfxHztBBhdP9qjnAAAAAElFTkSuQmCC
+
+--=_6c714737-7152-4c05-8c80-2d1bbd2533a8--
+
+--=_a31f0ba5-594d-4f8a-a2eb-49af7051363e--
